@@ -1,0 +1,27 @@
+{
+  "name": "acf-afbeelding",
+  "title": "Afbeelding",
+  "description": "",
+  "category": "paginablokken",
+  "icon": "format-image",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-afbeelding.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/theinvaders-theme/img/preview-images/Afbeelding-Gecentreerd.jpg",
+        "is_preview": true
+      }
+    }
+  }
+}
