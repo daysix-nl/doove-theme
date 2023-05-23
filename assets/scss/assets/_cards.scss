@@ -1,0 +1,44 @@
+@media (min-width: 1200px) {
+    a.uspcard {
+
+        .titel {
+            transition-duration: .3s;
+        }
+
+        .content {
+            opacity: 1;
+            transition-duration: .3s;
+        }
+
+        .arrow {
+            opacity: 0;
+            transition-duration: .3s;
+            padding-top: 5px;
+            padding-right: 5px;
+        }
+
+    }
+
+
+    a.uspcard:hover {
+
+        .titel {
+            color: #ED701F !important;
+            transition-duration: .3s;
+        }
+
+        .content {
+            opacity: 0.75;
+            transition-duration: .3s;
+        }
+
+        .arrow {
+            opacity: 1;
+            transition-duration: .4s;
+            padding-top: 0px;
+            padding-right: 0px;
+        }
+
+
+    }
+}

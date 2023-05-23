@@ -1,3 +1,11 @@
 body.doove {
   background: #061116;
 }
+
+.doove {
+  @media (min-width: 768px) {
+    .bg-half {
+      background: linear-gradient(90deg, #F4F4F5 50%, #fff 50%);
+    }
+  }
+}

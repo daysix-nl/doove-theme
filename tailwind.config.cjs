@@ -16,24 +16,21 @@ module.exports = {
     },
     screens: {
       'sm': '640px',
-      'md': '840px',
-      'lg': '840px',
-      'xl': '1290px',
-      '2xl': '1536px',
+      'md': '768px',
+      'lg': '1200px',
+      'xl': '1352px',
+      '2xl': '1800px',
     },
 
     extend: {
       fontFamily: {
-        "rubik": ["Rubik"],
-        "space": ["Space Grotesk"],
+        "satoshi": ["satoshi"],
+        "nunito": ["nunito sans"],
       },
       colors: {
         white: "#FFFFFF",
-        black: "#061116",
-        blue: "#1B1564",
-        bluesoft: "#48237F",
-        purple: "#742B8B",
-        purplesoft: "#8E278A",
+        black: "#332E2A",
+        orange: "#ED701F",
         transparent: "transparent",
       },
       content: {
@@ -394,34 +391,31 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         ".container": {
+          maxWidth: "390px",
           width: "auto",
           marginLeft: "auto",
           marginRight: "auto",
           paddingLeft: "20px",
           paddingRight: "20px",
           "@screen sm": {
-            maxWidth: "800px",
+            maxWidth: "390px",
             width: "auto",
           },
           "@screen md": {
-            maxWidth: "800px",
-            width: "auto",
+            maxWidth: "688px",
+            width: "688px",
+            paddingLeft: "0px",
+            paddingRight: "0px",
           },
           "@screen lg": {
-            maxWidth: "800px",
-            width: "800px",
+            maxWidth: "1130px",
+            width: "1130px",
             paddingLeft: "0px",
             paddingRight: "0px",
           },
           "@screen xl": {
-            maxWidth: "1025px",
-            width: "1025px",
-            paddingLeft: "0px",
-            paddingRight: "0px",
-          },
-          "@screen 2xl": {
-            maxWidth: "1025px",
-            width: "1025px",
+            maxWidth: "1272px",
+            width: "1272px",
             paddingLeft: "0px",
             paddingRight: "0px",
           },
