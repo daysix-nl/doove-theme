@@ -17,6 +17,11 @@
             padding-right: 5px;
         }
 
+        .green {
+            opacity: 1;
+            transition-duration: .3s;
+        }
+
     }
 
 
@@ -39,6 +44,25 @@
             padding-right: 0px;
         }
 
+        .green {
+            opacity: 0.75;
+            transition-duration: .3s;
+        }
+
 
     }
+
+
+}
+
+a span.arrow-orange {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    transition-duration: 0.3s;
+}
+
+a:hover span.arrow-orange {
+    margin-left: 23px;
+    margin-bottom: 3px;
+    transition-duration: 0.3s;
 }

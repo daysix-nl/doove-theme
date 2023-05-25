@@ -55,10 +55,10 @@
                 <a href="/" class="col-span-1 px-[unset] md:px-2 lg:px-[27px] xl:px-3 pt-[unset] lg:pt-4 xl:pt-5 pb-[unset] lg:pb-3 xl:pb-3 grid lg:hover:bg-white duration-300 rounded-xl relative uspcard">
                     <div class="grid gap-2 md:gap-3 lg:gap-[35px] xl:gap-3 content-between">
                         <div class="grid gap-[35px] md:gap-[25px] lg:gap-3">
-                            <h3 class="text-25 leading-30 md:text-21 md:leading-28 lg:text-22 lg:leading-25 xl:text-25 xl:leading-30 text-satoshi text-[#4EBE5B] font-bold">Steeds een beetje <br>groener</h3>
-                            <p class="text-18 leading-30 md:text-15 md:leading-25 lg:text-15 lg:leading-25 xl:text-18 xl:leading-30 text-nunito text-[#4EBE5B] font-normal">Lorem ipsum dolor sit amet, onsetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                            <h3 class="text-25 leading-30 md:text-21 md:leading-28 lg:text-22 lg:leading-25 xl:text-25 xl:leading-30 text-satoshi text-[#4EBE5B] font-bold green">Steeds een beetje <br>groener</h3>
+                            <p class="text-18 leading-30 md:text-15 md:leading-25 lg:text-15 lg:leading-25 xl:text-18 xl:leading-30 text-nunito text-[#4EBE5B] font-normal green">Lorem ipsum dolor sit amet, onsetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
                         </div>
-                        <p class="text-12 leading-27 md:text-12 md:leading-17 lg:text-11 lg:leading-23 xl:text-12 xl:leading-17 text-satoshi text-[#4EBE5B] font-bold uppercase">Lees meer</p>
+                        <p class="text-12 leading-27 md:text-12 md:leading-17 lg:text-11 lg:leading-23 xl:text-12 xl:leading-17 text-satoshi text-[#4EBE5B] font-bold uppercase green">Lees meer</p>
                     </div>
                     <div class="absolute lg:top-[25px] xl:top-3 lg:right-2 xl:right-[25px] arrow opacity-0"><?php include get_template_directory() . '/img/icons/arrow.php'; ?></div>
                 </a>
@@ -111,7 +111,7 @@
             <div class="max-w-unset md:max-w-[529px] lg:max-w-[567px] xl:max-w-[680px]">
                 <h2 class="text-25 leading-30 md:text-15 md:leading-14 lg:text-21 lg:leading-25 xl:text-25 xl:leading-30 text-satoshi text-black font-bold pb-4 md:pb-[25px] lg:pb-[25px] xl:pb-3">Lorem ipsum sid dolor amet</h2>
                 <p class="text-18 leading-30 md:text-14 md:leading-24 lg:text-15 lg:leading-25 xl:text-18 xl:leading-30 text-nunito text-black font-normal">Wij zijn ervan overtuigd dat er voldoende kennis en digitale hulpmiddelen zijn om de zorg echt te verbeteren.</p>
-                <a class="text-15 leading-30 md:text-15 md:leading-14 lg:text-14 lg:leading-24 xl:text-15 xl:leading-30 my-[45px] block text-orange font-nunito font-bold w-fit" href="/">Bekijk meer video’s op YouTube</a>
+                <a class="text-15 leading-30 md:text-15 md:leading-14 lg:text-14 lg:leading-24 xl:text-15 xl:leading-30 my-[45px] text-orange font-nunito font-bold w-fit flex justify-center items-center hover:opacity-[0.7] duration-300" href="/">Bekijk meer video’s op YouTube <span class="arrow-orange h-[8.94px] md:h-[7.14px] lg:h-[7.96px] xl:h-[8.94px]"><?php include get_template_directory() . '/img/icons/arrow-orange.php'; ?></span></a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-2 lg:gap-5 xl:gap-6">
                 <div class="col-span-1">
