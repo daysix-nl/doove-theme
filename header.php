@@ -19,9 +19,26 @@
 </head>
 
 <body <?php body_class( 'page-block doove' ); ?>>
-<header class="bg-white h-[82px] md:h-[71px] lg:h-[68px] w-full fixed z-50">
-  <div class="grid items-center h-full">
-    <a href="/" class="pl-2 md:pl-4 w-[231px]"><?php include get_template_directory() . '/img/icons/logo.php'; ?></a>
+<header class="bg-white h-[82px] md:h-[71px] lg:h-[68px] w-full fixed z-50 border-b-[1px] border-[#EBEBEB]">
+  <div class="flex items-center justify-between h-full">
+    <a href="/" class="ml-2 md:ml-4 w-[231px]"><?php include get_template_directory() . '/img/icons/logo.php'; ?></a>
+    <div class="flex h-[82px] md:h-[71px] lg:h-[68px] items-center">
+      <div class="hidden lg:flex">
+        <a href="#" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-semibold text-[#726A63] ml-4 flex items-center hover:opacity-[0.7] duration-300">Zorghulpmiddelen <span class="lg:h-[4.689px] xl:h-[5px] ml-2"><?php include get_template_directory() . '/img/icons/arrow-down.php'; ?></span></a>
+        <a href="#" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-semibold text-[#726A63] ml-4 hover:opacity-[0.7] duration-300">Facility Support</a>
+        <a href="#" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-semibold text-[#726A63] ml-4 hover:opacity-[0.7] duration-300">Academie</a>
+        <a href="#" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-semibold text-[#726A63] ml-4 hover:opacity-[0.7] duration-300">Nieuws</a>
+        <a href="#" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-semibold text-[#726A63] ml-4 hover:opacity-[0.7] duration-300">Vacatures</a>
+        <a href="#" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-semibold text-[#726A63] ml-4 hover:opacity-[0.7] duration-300">Contact</a>
+      </div>
+      <div class="hidden lg:flex ml-4 lg:mr-[15px] xl:mr-2">
+        <a href="" class="uppercase bg-orange rounded-[2px] lg:text-14 lg:leading-17 xl:text-18 xl:leading-22 font-nunito font-semibold text-white hover:opacity-[0.7] duration-300 lg:w-[78px] lg:h-[34px] xl:h-[39px] xl:w-[88px] flex items-center justify-center">Kis</a>
+        <a href="" class="uppercase bg-[#F4F4F5] rounded-[2px] lg:text-14 lg:leading-17 xl:text-18 xl:leading-22 font-nunito font-semibold text-white hover:opacity-[0.7] duration-300 lg:w-[36px] lg:h-[34px] xl:h-[39px] xl:w-[40px] flex items-center justify-center lg:ml-[10px] xl:ml-[15px]"><span class="lg:h-[12.9px] xl:h-[14.5px]"><?php include get_template_directory() . '/img/icons/glass.php'; ?></span></a>
+      </div>
+      <div class="block lg:hidden ml-4 mr-2 md:mr-[25px]">
+        <a href="" class="uppercase bg-orange rounded-[2px] w-[49px] h-[47px] md:h-[40px] md:w-[42px] flex items-center justify-center"></a>
+      </div>
+    </div>
   </div>
 </header>
   
