@@ -21,7 +21,7 @@
 <body <?php body_class( 'page-block doove' ); ?>>
 <header class="bg-white h-[82px] md:h-[71px] lg:h-[68px] w-full fixed z-50">
   <div class="grid items-center h-full">
-    <a href="/" class="pl-2 md:pl-4"><?php include get_template_directory() . '/img/icons/logo.php'; ?></a>
+    <a href="/" class="pl-2 md:pl-4 w-[231px]"><?php include get_template_directory() . '/img/icons/logo.php'; ?></a>
   </div>
 </header>
   
