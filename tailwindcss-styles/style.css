@@ -726,6 +726,9 @@ video {
 .max-w-\[390px\] {
   max-width: 390px;
 }
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .grid-flow-col {
   grid-auto-flow: column;
 }

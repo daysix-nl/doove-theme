@@ -72,7 +72,7 @@
     <section class="bg-white">
         <div class="relative">
             <div class="absolute right-0 top-0 bottom-0 bg-red-500 left-[unset] md:w-[calc(50%+76px)] lg:w-[calc(50%+127px)] xl:w-[calc(50%+142px)] overflow-hidden">
-                <img src="/wp-content/themes/doove-theme/img/local/image-2.png" alt="Vrouw laat Doove Care app zien" class="w-full h-full object-cover hidden md:block">
+                <img src="/wp-content/themes/doove-theme/img/local/image-2.png" alt="Vrouw laat Doove Care app zien" class="w-full h-full object-cover hidden md:block inner-hero">
             </div>
             <div class="max-w-[390px] md:max-w-[calc(50%-76px)] md:w-[calc(50%-76px)] lg:max-w-[1130px] lg:w-[1130px] xl:max-w-[1272px] xl:w-[1272px] mx-auto md:mx-[unset] lg:mx-auto px-2 md:px-0">
                 <div class="grid content-center gap-5 md:gap-3 lg:gap-4 xl:gap-4 bg-white md:w-[243px] lg:w-[439px] xl:w-[494px] pt-4 md:py-[65px] lg:py-[115px] xl:py-[130px] mx-[unset] md:mx-auto lg:mx-[unset]">
@@ -80,9 +80,9 @@
                     <p class="text-18 leading-30 md:text-14 md:leading-24 lg:text-15 lg:leading-25 xl:text-18 xl:leading-30 text-nunito text-black font-normal max-w-[unset] md:max-w-[243px] lg:max-w-[320px] xl:max-w-[384px]">Wij zijn ervan overtuigd dat er voldoende kennis en digitale hulpmiddelen zijn om de zorg echt te verbeteren. Met optimisme en innovativiteit hebben we een speciale app ontwikkeld. Zo helpen we ambitieuze zorginstellingen om nóg beter te worden. <br><br>Wij maken graag dingen beter. Vooral de zorg.</p>
                 </div>
             </div>
-            <img src="/wp-content/themes/doove-theme/img/local/image-2.png" alt="Vrouw laat Doove Care app zien" class="aspect-[4/3] object-cover block md:hidden pt-5">
+            <img src="/wp-content/themes/doove-theme/img/local/image-2.png" alt="Vrouw laat Doove Care app zien" class="aspect-[4/3] object-cover block md:hidden pt-5 inner-hero">
         </div>
-        <div class="bg-half relative">
+        <div class="bg-half relative section-hero">
             <div class="max-w-[390px] md:max-w-full md:w-full lg:max-w-[1130px] lg:w-[1130px] xl:max-w-[1272px] xl:w-[1272px] mx-auto md:mx-[unset] lg:mx-auto px-2 md:px-0 grid grid-flow-col gap-0 md:gap-0 lg:gap-0">
                 <div class="hidden md:grid content-center bg-[#F4F4F5] md:w-[268px] lg:w-[439px] xl:w-[494px] mx-[unset] md:mx-auto lg:mx-[unset]">
                     <img src="/wp-content/themes/doove-theme/img/local/image53.png" alt="Logo Reverse Thinking" class="md:w-[183px] lg:w-[305px] xl:w-[343px] md:ml-2 lg:ml-3 xl:ml-[35px]">
@@ -132,7 +132,21 @@
 
 </main>
 
+<script>
+    try {
+  const inner = document.querySelector(".inner-hero");
+  const section = document.querySelector(".section-hero");
 
+
+
+  window.onscroll = function () {
+    let value = window.pageYOffset / 2 / section.offsetTop + 1;
+    inner.style.transform = `scale(${value})`;
+
+  };
+} catch (error) { }
+
+</script>
 <?php get_footer(); ?>
 
 
