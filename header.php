@@ -25,7 +25,6 @@
     <div class="flex h-[82px] md:h-[71px] lg:h-[68px] items-center">
       <div class="hidden lg:flex">
         <button data-target="zorghulpmiddelen" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-semibold text-[#726A63] ml-4 flex items-center hover:opacity-[0.7] duration-300 button-navbar">Zorghulpmiddelen <span class="lg:h-[4.689px] xl:h-[5px] ml-2"><?php include get_template_directory() . '/img/icons/arrow-down.php'; ?></span></button>
-        <button data-target="test" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-semibold text-[#726A63] ml-4 flex items-center hover:opacity-[0.7] duration-300 button-navbar">test <span class="lg:h-[4.689px] xl:h-[5px] ml-2"><?php include get_template_directory() . '/img/icons/arrow-down.php'; ?></span></button>
         <a href="#" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-semibold text-[#726A63] ml-4 hover:opacity-[0.7] duration-300">Facility Support</a>
         <a href="#" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-semibold text-[#726A63] ml-4 hover:opacity-[0.7] duration-300">Academie</a>
         <a href="#" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-semibold text-[#726A63] ml-4 hover:opacity-[0.7] duration-300">Nieuws</a>
@@ -43,13 +42,10 @@
   </div>
 </header>
   
-<!-- OVERLAY ZORGHULPMIDDELEN -->
+<!-- OVERLAY MENU -->
 <div  class=" left-0 right-0 top-0 h-[500px] bg-white fixed z-40 menuitemoverlay ">
   <div id="zorghulpmiddelen" class="pt-10 inner_div">
     <p>zorg</p>
-  </div>
-    <div id="test" class="pt-10 inner_div">
-    <p>test</p>
   </div>
 </div>
 
