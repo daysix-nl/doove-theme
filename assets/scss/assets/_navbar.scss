@@ -1,16 +1,20 @@
 .menuitemoverlay {
-    &.inactive {
-        top: -100%;
-        transform-origin: top;
-        transform: scaleY(0);
-        transition: .6s ease-in-out;
+  top: -100%;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: 0.6s ease-in-out;
 
-    }
-
+  .inner_div {
+    display: none;
     &.active {
-        top: 0;
-        transform-origin: top;
-        transform: scaleY(1);
-        transition: .6s ease-in-out;
+      display: block;
     }
+  }
+
+  &.active {
+    top: 0;
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: 0.6s ease-in-out;
+  }
 }

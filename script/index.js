@@ -1,55 +1,59 @@
-
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+document.documentElement.style.setProperty("--vh", `${vh}px`);
 
 // We listen to the resize event
-window.addEventListener('resize', () => {
+window.addEventListener("resize", () => {
   // We execute the same script as before
   let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
 
+// Select various groups of elements
+const buttons = document.querySelectorAll(".button-navbar");
+const overlayNavbar = document.querySelector(".menuitemoverlay");
+const overlayNavbarLinks = document.querySelectorAll("header a");
+const otherButtons = document.querySelectorAll(
+  "header button:not(.button-navbar)"
+);
+const overlayInnerDivs = document.querySelectorAll(".inner_div");
+const overlayHeader = document.querySelector(".overlay-header");
 
-// BUTTON ELEMENTEN
-// Zoek alle button-elementen op de pagina
-var buttons = document.getElementsByTagName('button');
-var hoverElements = document.getElementsByClassName('nohvr');
+// Define function to remove 'active' class from elements
+function removeClassButtonNavbar() {
+  overlayNavbar.classList.remove("active");
+  overlayHeader.classList.add("hidden");
 
+  overlayInnerDivs.forEach((div) => div.classList.remove("active"));
+  buttons.forEach((button) => button.classList.remove("active"));
+}
 
-// Itereer over alle gevonden button-elementen
-for (var i = 0; i < buttons.length; i++) {
-  // Voeg eventlisteners toe voor hover-gebeurtenissen op buttons
-  buttons[i].addEventListener('mouseenter', function () {
-    // Toggle de classes wanneer de muis over de button beweegt
-    toggleClasses(this);
+// Apply 'mouseover' and 'click' events to buttons
+buttons.forEach((button) => {
+  ["mouseover", "click"].forEach((evt) => {
+    button.addEventListener(evt, () => {
+      removeClassButtonNavbar();
+      overlayHeader.classList.remove("hidden");
+      const targetId = button.getAttribute("data-target");
+      const targetElement = document.querySelector(`#${targetId}`);
+
+      overlayNavbar.classList.add("active");
+      button.classList.add("active");
+
+      if (targetElement) {
+        targetElement.classList.add("active");
+      }
+    });
   });
+});
 
-}
+// Apply 'mouseover' and 'click' events to otherButtons and overlayNavbarLinks
+[...otherButtons, ...overlayNavbarLinks].forEach((element) => {
+  ["mouseover", "click"].forEach((evt) => {
+    element.addEventListener(evt, removeClassButtonNavbar);
+  });
+});
 
-// Functie om classes te toggelen en andere elementen met hetzelfde ID bij te werken
-function toggleClasses(element) {
-  // Toggle de classes voor het huidige element
-  element.classList.toggle('inactive');
-  element.classList.toggle('active');
-  element.classList.toggle('nohvr'); // Toggle de class .hvr naar .nohvr
-
-  // Controleer of er andere elementen zijn met hetzelfde ID
-  var elementsWithSameId = document.querySelectorAll('[id="' + element.id + '"]');
-  for (var k = 0; k < elementsWithSameId.length; k++) {
-    // Sla het huidige element over (om duplicatie van classes te voorkomen)
-    if (elementsWithSameId[k] !== element) {
-      // Toggle de classes voor de andere elementen
-      elementsWithSameId[k].classList.toggle('inactive');
-      elementsWithSameId[k].classList.toggle('active');
-      elementsWithSameId[k].classList.toggle('nohvr'); // Toggle de class .hvr naar .nohvr
-    }
-  }
-}
-
-
-
-
-
-
+// Apply 'mouseover' event to overlayHeader
+overlayHeader.addEventListener("mouseover", removeClassButtonNavbar);
