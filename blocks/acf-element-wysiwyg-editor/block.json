@@ -1,0 +1,27 @@
+{
+  "name": "acf-element-wysiwyg-editor",
+  "title": "Wysiwyg editor",
+  "description": "Een losse tekstblok waarin je zelf de opmaak kunt bepalen.",
+  "category": "elementen",
+  "icon": "editor-alignleft",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-element-wysiwyg-editor.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/element-wysiwyg-editor.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

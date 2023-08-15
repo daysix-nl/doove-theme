@@ -1,0 +1,27 @@
+{
+  "name": "acf-video",
+  "title": "Video",
+  "description": "Een blok waarin je full screen een video kan laten zien.",
+  "category": "bibliotheek",
+  "icon": "video-alt3",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-video.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/video.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

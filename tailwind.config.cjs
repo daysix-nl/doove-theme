@@ -31,6 +31,11 @@ module.exports = {
         white: "#FFFFFF",
         black: "#332E2A",
         orange: "#ED701F",
+        oranje: "#ED701F",
+        groen: "#4EBE5B",
+        grijs: "#F4F4F5",
+        donkergrijs: "#726A63",
+        lichtoranje: "#FDEFE3",
         transparent: "transparent",
       },
       content: {

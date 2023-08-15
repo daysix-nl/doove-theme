@@ -1,9 +1,9 @@
 {
-  "name": "acf-afbeelding",
-  "title": "Afbeelding",
+  "name": "acf-leegx",
+  "title": "Leeg",
   "description": "",
-  "category": "paginablokken",
-  "icon": "format-image",
+  "category": "bibliotheek",
+  "icon": "warningh",
   "keywords": [
     "block"
   ],
@@ -13,13 +13,13 @@
   },
   "acf": {
     "mode": "preview",
-    "renderTemplate": "acf-afbeelding.php"
+    "renderTemplate": "acf-leeg.php"
   },
   "example": {
     "attributes": {
       "mode": "preview",
       "data": {
-        "preview_image_help": "/wp-content/themes/theinvaders-theme/img/preview-images/Afbeelding-Gecentreerd.jpg",
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/leeg.jpeg",
         "is_preview": true
       }
     }

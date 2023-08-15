@@ -1,0 +1,27 @@
+{
+  "name": "acf-header-3",
+  "title": "Header 3",
+  "description": "Een header met tekstblok, voor een mockup van een computerscherm dat op een bureau staat.",
+  "category": "bibliotheek",
+  "icon": "align-full-width",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-header-3.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/header-3.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

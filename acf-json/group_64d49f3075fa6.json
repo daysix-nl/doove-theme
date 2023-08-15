@@ -1,0 +1,93 @@
+{
+    "key": "group_64d49f3075fa6",
+    "title": "Element: Video's",
+    "fields": [
+        {
+            "key": "field_64d49f30773b0",
+            "label": "",
+            "name": "videos_repeater",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Nieuwe video",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64d49f307d86e",
+                    "label": "ID YouTube video",
+                    "name": "id_youtube",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "<b>Uitleg:<\/b> Ga naar www.youtube.com en ga naar de desbetreffende video. Klik vervolgens op de <u>Delen<\/u> button. Je krijgt dan een URL te zien van YouTube met daarachter een unieke code van de video. Voorbeeld: <em>https:\/\/youtube.com\/<b>10PzKOd8aZs<\/b><\/em>. Kopieer deze code en plaats hem in dit veld.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "10PzKOd8aZs",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64d49f30773b0"
+                },
+                {
+                    "key": "field_64d49f307d872",
+                    "label": "Titel",
+                    "name": "titel",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Productvideo",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64d49f30773b0"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/acf-element-videos"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1691656182
+}

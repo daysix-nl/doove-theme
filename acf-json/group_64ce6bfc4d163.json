@@ -1,0 +1,167 @@
+{
+    "key": "group_64ce6bfc4d163",
+    "title": "Meer video's",
+    "fields": [
+        {
+            "key": "field_64ce6bfc7594f",
+            "label": "Titel",
+            "name": "titel",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Lorem ipsum sid dolor amet",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64ce6c613bb79",
+            "label": "Tekst",
+            "name": "tekst",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Wij zijn ervan overtuigd dat er voldoende kennis en digitale hulpmiddelen zijn om de zorg echt te verbeteren.",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_64ce6d1e65dfb",
+            "label": "Link tekst",
+            "name": "link_tekst",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Bekijk meer video’s op YouTube",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64ce6d3065dfc",
+            "label": "Link",
+            "name": "link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
+        },
+        {
+            "key": "field_64ce70225c6cf",
+            "label": "Video's",
+            "name": "videos_repeater",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_64ce70705c6d1",
+            "button_label": "Nieuwe video",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64ce70395c6d0",
+                    "label": "ID YouTube video",
+                    "name": "id_youtube",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "<b>Uitleg:<\/b> Ga naar www.youtube.com en ga naar de desbetreffende video. Klik vervolgens op de <u>Delen<\/u> button. Je krijgt dan een URL te zien van YouTube met daarachter een unieke code van de video. Voorbeeld: <em>https:\/\/youtube.com\/<b>10PzKOd8aZs<\/b><\/em>. Kopieer deze code en plaats hem in dit veld.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "10PzKOd8aZs",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64ce70225c6cf"
+                },
+                {
+                    "key": "field_64ce70705c6d1",
+                    "label": "Titel",
+                    "name": "titel",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Innovatie van Doove Care Groep",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64ce70225c6cf"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/acf-meer-videos"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1691251121
+}

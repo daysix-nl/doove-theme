@@ -1,0 +1,27 @@
+{
+  "name": "acf-evenementen-overzicht",
+  "title": "Evenementen overzicht",
+  "description": "Een blok dat automatisch alle evenementen toont.",
+  "category": "bibliotheek",
+  "icon": "schedule",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-evenementen-overzicht.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/evenementen-overzicht.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "acf-element-videos",
+  "title": "Video's",
+  "description": "Een losse video.",
+  "category": "elementen",
+  "icon": "video-alt3",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-element-videos.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/video.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

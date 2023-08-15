@@ -1,0 +1,27 @@
+{
+  "name": "acf-header-4",
+  "title": "Header 4",
+  "description": "Een header met alleen een titel en een achtegrondkleur.",
+  "category": "bibliotheek",
+  "icon": "align-full-width",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-header-4.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/header-4.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

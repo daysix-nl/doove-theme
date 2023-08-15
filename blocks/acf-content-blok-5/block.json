@@ -1,0 +1,27 @@
+{
+  "name": "acf-content-blok-5",
+  "title": "Content blok 5",
+  "description": "Een lege content blok waarin gekozen kan worden uit losse elementen.",
+  "category": "bibliotheek",
+  "icon": "editor-alignleft",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-content-blok-5.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/content-blok-5.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

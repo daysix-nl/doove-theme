@@ -1,0 +1,41 @@
+// ACCORDION
+
+// .accordion.active .accordion-body {
+//     display: block;
+//     opacity: 1;
+// }
+
+// .accordion .accordion-body {
+//     display: none;
+//     opacity: 0;
+// }
+
+.panel {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+}
+
+// HEADER
+
+#search-popup.search {
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+header {
+  button.button-navbar {
+    transition: transform 0.2s ease-out;
+    transform: rotate(0deg);
+    &.active {
+      svg {
+        transition-delay: 200ms;
+        transition: transform 0.2s ease-out;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

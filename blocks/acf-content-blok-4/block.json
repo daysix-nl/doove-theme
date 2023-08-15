@@ -1,0 +1,27 @@
+{
+  "name": "acf-content-blok-4",
+  "title": "Content blok 4",
+  "description": "Een content blok met tekst en een grid van 4 kolommen met afbeeldingen en tekst.",
+  "category": "bibliotheek",
+  "icon": "editor-alignleft",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-content-blok-4.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/content-blok-4.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

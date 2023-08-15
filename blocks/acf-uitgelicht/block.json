@@ -1,0 +1,27 @@
+{
+  "name": "acf-uitgelicht",
+  "title": "Uitgelicht",
+  "description": "Een grid van vier kolommen waarin content kan uitlichten. Met en zonder link.",
+  "category": "bibliotheek",
+  "icon": "columns",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-uitgelicht.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/uitgelicht.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

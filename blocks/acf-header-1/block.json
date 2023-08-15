@@ -1,0 +1,27 @@
+{
+  "name": "acf-header-1",
+  "title": "Header 1",
+  "description": "Een header met een full-screen achtergrondafbeelding en een tekstblok in het midden. Optioneel ook ruimte voor bijvoorbeeld een mockup van een telefoon of tablet.",
+  "category": "bibliotheek",
+  "icon": "align-full-width",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-header-1.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/header-1.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

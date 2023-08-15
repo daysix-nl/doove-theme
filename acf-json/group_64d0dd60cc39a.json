@@ -1,0 +1,241 @@
+{
+    "key": "group_64d0dd60cc39a",
+    "title": "Product",
+    "fields": [
+        {
+            "key": "field_64d10259bc422",
+            "label": "Algemeen",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 1,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_64d0dec3e5219",
+            "label": "Subtitel",
+            "name": "subtitel",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Revalidatiebed met volledige automatische rotatie",
+            "maxlength": "",
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_64d0df25d1c52",
+            "label": "Tekst",
+            "name": "tekst",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Met een RotoBed® Free kunnen mensen die moeite hebben om in en uit het bed te komen, geheel zelfstandig een transfer maken zonder enige fysieke inspanning. Dit draagt bij aan het vergroten van de mobiliteit en kwaliteit van leven van de gebruiker, vermindert de werkdruk van het verzorgend personeel en bespaart tijd en geld. Ook zeer geschikt als revalidatiebed.",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_64d122ce60e78",
+            "label": "Product foto's",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 1,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_64d1029a09f62",
+            "label": "Product afbeeldingen",
+            "name": "product_afbeeldingen_repeater",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Afbeelding toevoegen",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64d102b609f63",
+                    "label": "Product afbeelding",
+                    "name": "product_afbeelding",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "png",
+                    "preview_size": "preview",
+                    "parent_repeater": "field_64d1029a09f62"
+                }
+            ]
+        },
+        {
+            "key": "field_64d1026bbc423",
+            "label": "Tabbladen",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 1,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_64d11c18b2c60",
+            "label": "",
+            "name": "tabbladen_repeater",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_64d11c248c464": {
+                    "key": "layout_64d11c248c464",
+                    "name": "tabblad",
+                    "label": "Tabblad",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64d11c4ab2c61",
+                            "label": "Titel",
+                            "name": "titel",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Omschrijving",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_64d11c79b2c62",
+                            "label": "Tekst",
+                            "name": "tekst",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Ontworpen om de gebruiker zelfredzaam en onafhankelijk te maken\/houden door het in- en uitstappen van het bed te vereenvoudigen.Door een druk op de knop van de afstandsbediening wordt het bed in zitpositie gebracht en in de richting van de kamer gedraaid.\r\n\r\nDit vergemakkelijkt het opstaan en de eventuele overgang naar een rolstoel of ander hulpmiddel. Naast de roterende functie kan met de afstandsbediening ook de hoogte, het ruggedeelte en beendeel worden aangepast. De automatische draai is rustig en comfortabel voor de gebruiker.\r\n\r\nOm decubitus te voorkomen kan het beengedeelte omhoog worden gebracht om druk van hielen en enkels te vermijden.\r\n\r\nVoorzien van eenvoudige afstandsbediening. Het bed is te verplaatsen door de wielen aan het hoofd- en voeteinde van het bed te activeren.\r\n\r\nRotoBed® Free is getest volgens de Europese veiligheidsnorm voor bedden IEC 60601-2-52.\r\n\r\nInformeer naar onze beheer- en onderhoudscontracten voor zorghulpmiddelen in zorginstellingen.",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Nieuwe tabblad"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/acf-template-product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1691656123
+}

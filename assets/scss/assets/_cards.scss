@@ -1,68 +1,171 @@
 @media (min-width: 1200px) {
-    a.uspcard {
-
-        .titel {
-            transition-duration: .3s;
-        }
-
-        .content {
-            opacity: 1;
-            transition-duration: .3s;
-        }
-
-        .arrow {
-            opacity: 0;
-            transition-duration: .3s;
-            padding-top: 5px;
-            padding-right: 5px;
-        }
-
-        .green {
-            opacity: 1;
-            transition-duration: .3s;
-        }
-
+  a.uspcard {
+    .titel {
+      transition-duration: 0.3s;
     }
 
-
-    a.uspcard:hover {
-
-        .titel {
-            color: #ED701F !important;
-            transition-duration: .3s;
-        }
-
-        .content {
-            opacity: 0.75;
-            transition-duration: .3s;
-        }
-
-        .arrow {
-            opacity: 1;
-            transition-duration: .4s;
-            padding-top: 0px;
-            padding-right: 0px;
-        }
-
-        .green {
-            opacity: 0.75;
-            transition-duration: .3s;
-        }
-
-
+    .content {
+      opacity: 1;
+      transition-duration: 0.3s;
     }
 
+    .arrow {
+      opacity: 0;
+      transition-duration: 0.3s;
+      padding-top: 5px;
+      padding-right: 5px;
+    }
 
+    .green {
+      opacity: 1;
+      transition-duration: 0.3s;
+    }
+  }
+
+  a.uspcard:hover {
+    .titel {
+      color: #ed701f !important;
+      transition-duration: 0.3s;
+    }
+
+    .content {
+      opacity: 0.75;
+      transition-duration: 0.3s;
+    }
+
+    .arrow {
+      opacity: 1;
+      transition-duration: 0.4s;
+      padding-top: 0px;
+      padding-right: 0px;
+    }
+
+    .green {
+      opacity: 0.75;
+      transition-duration: 0.3s;
+    }
+  }
 }
 
 a span.arrow-orange {
-    margin-left: 20px;
-    margin-bottom: 0px;
-    transition-duration: 0.3s;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  transition-duration: 0.3s;
+  margin-right: 0px;
 }
 
 a:hover span.arrow-orange {
-    margin-left: 23px;
-    margin-bottom: 3px;
-    transition-duration: 0.3s;
+  margin-left: 23px;
+  margin-bottom: 3px;
+  transition-duration: 0.3s;
+  margin-right: -3px;
+}
+
+// tabs
+
+.tab-wrapper {
+  height: 100%;
+}
+
+.tab-header {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  margin: 0px 0px;
+}
+
+.tab-header .tab-btn {
+  padding-top: 0px;
+  padding-bottom: 45px;
+  border: none;
+  cursor: pointer;
+  color: #332e2a;
+  z-index: 1;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.tab-header .tab-btn:focus {
+  outline: none;
+}
+
+.tab-header .tab-btn:hover,
+.tab-header .tab-btn.active {
+  color: #332e2a;
+  //   font-weight: 700;
+  text-shadow: 0px 0px 1px #332e2a;
+}
+
+.tab-header .underline {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  height: 1px;
+  width: 0;
+  transform-origin: left;
+  background-color: #332e2a;
+  transition: all 0.3s ease;
+}
+
+.tab-body {
+  display: flex;
+  overflow: hidden;
+  margin: 0 0px;
+}
+
+.tab-body .tab-content {
+  min-width: 100%;
+  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 00px;
+  transition: all 0.3s;
+  text-align: justify;
+
+  table {
+    width: 100% !important;
+  }
+}
+
+// accordion
+.accordion-item {
+  background-color: #fff;
+  border-bottom: 1px solid #707070;
+
+  .accordion {
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition-delay: 0.2s;
+    transition-property: border-radius, background-color, color;
+    transition-duration: 0.2s;
+    // border-radius: 25px;
+
+    &::after {
+      content: "+";
+      margin-left: auto;
+
+      display: block;
+    }
+
+    &.active {
+      transition-delay: 0s;
+      transition: 0s;
+
+      &::after {
+        content: "-";
+      }
+    }
+  }
+
+  .panel {
+    // border-radius: 0 0 25px 25px;
+    padding: 0 0px;
+    background-color: #fff;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.2s ease-out;
+  }
 }

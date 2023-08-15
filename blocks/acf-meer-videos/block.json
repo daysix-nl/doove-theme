@@ -1,0 +1,27 @@
+{
+  "name": "acf-meer-videos",
+  "title": "Meer video's",
+  "description": "Een blok met een video slider.",
+  "category": "bibliotheek",
+  "icon": "playlist-video",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-meer-videos.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/meer-videos.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

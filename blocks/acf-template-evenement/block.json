@@ -1,0 +1,27 @@
+{
+  "name": "acf-template-evenement",
+  "title": "Template evenement item",
+  "description": "Een blok dat automatisch vier evenementen toont.",
+  "category": "pagina",
+  "icon": "layout",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-template-evenement.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/template-evenement.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

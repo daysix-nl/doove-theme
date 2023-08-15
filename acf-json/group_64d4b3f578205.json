@@ -1,0 +1,117 @@
+{
+    "key": "group_64d4b3f578205",
+    "title": "Element instellingen",
+    "fields": [
+        {
+            "key": "field_64d4b3f579b06",
+            "label": "Element instellingen",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 1,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_64d4b3f579b0d",
+            "label": "Witruimte bovenkant",
+            "name": "padding_top",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "padding-top-xs": "Extra small",
+                "padding-top-s": "Small",
+                "padding-top-m": "Medium",
+                "padding-top-l": "Large",
+                "padding-top-xl": "Extra large",
+                "pt-0": "None"
+            },
+            "default_value": "pt-0",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_64d4b3f579b10",
+            "label": "Witruimte onderkant",
+            "name": "padding_bottom",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "padding-bottom-xs": "Extra small",
+                "padding-bottom-s": "Small",
+                "padding-bottom-m": "Medium",
+                "padding-bottom-l": "Large",
+                "padding-bottom-xl": "Extra large",
+                "pb-0": "None"
+            },
+            "default_value": "pb-0",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/acf-element-wysiwyg-editor"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/acf-element-button"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/acf-element-videos"
+            }
+        ]
+    ],
+    "menu_order": 999,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1691661365
+}

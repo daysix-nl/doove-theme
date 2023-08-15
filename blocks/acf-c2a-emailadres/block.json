@@ -1,0 +1,27 @@
+{
+  "name": "acf-c2a-emailadres",
+  "title": "Call to action emailadres",
+  "description": "Call to action blok waarin wordt gevraagd naar een emailadres",
+  "category": "bibliotheek",
+  "icon": "migrate",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-c2a-emailadres.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/c2a-emailadres.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

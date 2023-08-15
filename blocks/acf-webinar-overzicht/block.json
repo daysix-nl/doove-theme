@@ -1,0 +1,27 @@
+{
+  "name": "acf-webinar-overzicht",
+  "title": "Webinar overzicht",
+  "description": "Een blok dat automatisch alle webinars toont.",
+  "category": "bibliotheek",
+  "icon": "schedule",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-webinar-overzicht.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/webinar-overzicht.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "acf-header-2",
+  "title": "Header 2",
+  "description": "Een header met een afbeelding en een tekstblok.",
+  "category": "bibliotheek",
+  "icon": "align-full-width",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-header-2.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/header-2.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

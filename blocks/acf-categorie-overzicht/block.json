@@ -1,0 +1,27 @@
+{
+  "name": "acf-categorie-overzicht",
+  "title": "Categrorie overzicht",
+  "description": "Een blok dat automatisch een overzicht van product categorieën toont.",
+  "category": "bibliotheek",
+  "icon": "schedule",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-categorie-overzicht.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/categorie-overzicht.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

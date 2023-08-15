@@ -2,16 +2,10 @@ body.doove {
   background: #fff;
 }
 
-.doove {
-  // @media (min-width: 768px) {
-  //   .bg-half {
-  //     background: linear-gradient(90deg, #F4F4F5 43.2%, #fff 43.2%);
-  //   }
-  // }
 
-  @media (min-width: 768px) {
-    .bg-half {
-      background: linear-gradient(90deg, #F4F4F5 50%, #fff 50%);
-    }
+
+@media (min-width: 768px) {
+  .bg-half {
+    background: linear-gradient(90deg, #F4F4F5 50%, #fff 50%);
   }
 }

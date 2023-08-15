@@ -1,0 +1,63 @@
+{
+    "key": "group_64d3b91eb1407",
+    "title": "Webinar informatie",
+    "fields": [
+        {
+            "key": "field_64d3b91eb2b79",
+            "label": "Introductie tekst",
+            "name": "introductie_tekst",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "Type hier een tekst dat getoond wordt op overzicht pagina's...",
+            "new_lines": ""
+        },
+        {
+            "key": "field_64d3b92d774c1",
+            "label": "Datum",
+            "name": "datum",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "l j F",
+            "return_format": "l j F",
+            "first_day": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "webinar"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1691597468
+}

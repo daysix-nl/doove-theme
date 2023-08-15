@@ -1,0 +1,27 @@
+{
+  "name": "acf-contact",
+  "title": "Contact",
+  "description": "Dit is een blok met een contactformulier en alle overige contactgegevens. De gegevens worden automatisch opgehaald.",
+  "category": "bibliotheek",
+  "icon": "warningh",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-contact.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/contact.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

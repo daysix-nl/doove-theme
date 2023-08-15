@@ -1,0 +1,27 @@
+{
+  "name": "acf-template-nieuws-item",
+  "title": "Template nieuws item",
+  "description": "Een complete pagina template voor een nieuws item.",
+  "category": "pagina",
+  "icon": "layout",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-template-nieuws-item.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/template-nieuws-item.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

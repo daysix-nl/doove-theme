@@ -1,0 +1,27 @@
+{
+  "name": "acf-content-blok-1",
+  "title": "Content blok 1",
+  "description": "Een content blok dat bestaat uit twee rijen met elk een afbeelding en een tekstblok.",
+  "category": "bibliotheek",
+  "icon": "editor-alignleft",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-content-blok-1.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/content-blok-1.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

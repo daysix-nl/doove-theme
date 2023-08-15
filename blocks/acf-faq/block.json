@@ -1,0 +1,27 @@
+{
+  "name": "acf-faq",
+  "title": "FAQ",
+  "description": "Een blok om een lijst met veelgestelde vragen te tonen met antwoorden in vorm van accordionblokken.",
+  "category": "bibliotheek",
+  "icon": "menu-alt2",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-faq.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/faq.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

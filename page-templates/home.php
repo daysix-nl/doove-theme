@@ -7,7 +7,7 @@
  get_header(); ?>
  
 <main>
-    <!-- HEADER -->
+    <!-- HEADER 1 -->
     <section class="h-[421px] max-h-[unset] md:max-h-[768px] lg:max-h-[unset] md:h-screen bg-center bg-cover" style="background-image: url('/wp-content/themes/doove-theme/img/local/image1.png');">
         <div class="container flex h-full items-center pt-[41px] md:pt-[35.5px] lg:pt-[34px]">
             <img src="/wp-content/themes/doove-theme/img/local/image14.png" alt="Mock-up Doove Care App" class="max-w-[89px] md:max-w-[176px] lg:max-w-[207px] xl:max-w-[233px] ml-[20px] mr-[30px] md:ml-[55px] md:mr-[65px] lg:ml-[116px] lg:mr-[85px] xl:ml-[132px] xl:mr-[75px]">
@@ -17,7 +17,6 @@
 
 
     <!-- CARDS -->
-
     <section class="bg-[#F4F4F5]">
         <div class="container pt-5 md:pt-7 lg:pt-6 xl:pt-10 pb-[110px] md:pb-7 lg:pb-7 xl:pb-8">
             <h2 class="text-25 leading-25 md:text-21 md:leading-21 lg:text-22 lg:leading-22 xl:text-25 xl:leading-25 font-satoshi text-[#ED701F] font-semibold pl-[unset] md:pl-2 lg:pl-[27px] xl:pl-3 pb-[55px] md:pb-6 lg:pb-2 xl:pb-[15px]">De toekomst is nu! </h2>
@@ -68,11 +67,11 @@
     </section>
 
 
-    <!-- TEXT IMAGE BLOCKS -->
-    <section class="bg-white">
+    <!-- TEXT - IMAGE BLOCKS -->
+    <section class="bg-white overflow-hidden w-screen">
         <div class="relative">
             <div class="absolute right-0 top-0 bottom-0 bg-red-500 left-[unset] md:w-[calc(50%+76px)] lg:w-[calc(50%+127px)] xl:w-[calc(50%+142px)] overflow-hidden">
-                <img src="/wp-content/themes/doove-theme/img/local/image-2.png" alt="Vrouw laat Doove Care app zien" class="w-full h-full object-cover object-left-top hidden md:block inner-hero">
+                <img src="/wp-content/themes/doove-theme/img/local/image-2.png" alt="Vrouw laat Doove Care app zien" class="w-full h-full object-cover object-left-top hidden md:block inner-hero scale-150">
             </div>
             <div class="max-w-[390px] md:max-w-[calc(50%-76px)] md:w-[calc(50%-76px)] lg:max-w-[1130px] lg:w-[1130px] xl:max-w-[1272px] xl:w-[1272px] mx-auto md:mx-[unset] lg:mx-auto px-2 md:px-0">
                 <div class="grid content-center gap-[25px] md:gap-3 lg:gap-4 xl:gap-4 bg-white md:w-[243px] lg:w-[439px] xl:w-[494px] pt-4 md:py-[65px] lg:py-[115px] xl:py-[130px] mx-[unset] md:mx-auto lg:mx-[unset]">
@@ -80,7 +79,7 @@
                     <p class="text-18 leading-30 md:text-14 md:leading-24 lg:text-15 lg:leading-25 xl:text-18 xl:leading-30 font-nunito text-black font-normal max-w-[unset] md:max-w-[243px] lg:max-w-[320px] xl:max-w-[384px]">Wij zijn ervan overtuigd dat er voldoende kennis en digitale hulpmiddelen zijn om de zorg echt te verbeteren. Met optimisme en innovativiteit hebben we een speciale app ontwikkeld. Zo helpen we ambitieuze zorginstellingen om nóg beter te worden. <br><br>Wij maken graag dingen beter. Vooral de zorg.</p>
                 </div>
             </div>
-            <img src="/wp-content/themes/doove-theme/img/local/image-2.png" alt="Vrouw laat Doove Care app zien" class="aspect-[4/3] object-cover block md:hidden pt-5 inner-hero">
+            <img src="/wp-content/themes/doove-theme/img/local/image-2.png" alt="Vrouw laat Doove Care app zien" class="aspect-[4/3] object-cover block md:hidden pt-5 inner-hero scale-150">
         </div>
         <div class="bg-half relative section-hero">
             <div class="max-w-[390px] md:max-w-full md:w-full lg:max-w-[1130px] lg:w-[1130px] xl:max-w-[1272px] xl:w-[1272px] mx-auto md:mx-[unset] lg:mx-auto px-2 md:px-0 grid grid-flow-col gap-0 md:gap-0 lg:gap-0">
@@ -99,54 +98,56 @@
     </section>
 
 
-    <!-- VIDEO -->
+    <!-- FULL SCREEN VIDEO -->
     <section>
         <iframe class="aspect-video w-full" src="https://www.youtube-nocookie.com/embed/10PzKOd8aZs?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
     </section>
 
 
     <!-- MEER VIDEO'S -->
-    <section class="bg-white">
-        <div class="container pt-[35px] pb-6 md:pt-[45px] md:pb-9 lg:pt-8 lg:pb-[160px] xl:pt-9 xl:pb-[180px]">
+    <section class="bg-white pt-[35px] pb-6 md:pt-[45px] md:pb-9 lg:pt-8 lg:pb-[160px] xl:pt-9 xl:pb-[180px]">
+        <div class="container ">
             <div class="max-w-unset md:max-w-[529px] lg:max-w-[567px] xl:max-w-[680px]">
                 <h2 class="text-25 leading-30 md:text-15 md:leading-14 lg:text-21 lg:leading-25 xl:text-25 xl:leading-30 font-satoshi text-black font-semibold pb-4 md:pb-[25px] lg:pb-[25px] xl:pb-3">Lorem ipsum sid dolor amet</h2>
                 <p class="text-18 leading-30 md:text-14 md:leading-24 lg:text-15 lg:leading-25 xl:text-18 xl:leading-30 font-nunito text-black font-normal">Wij zijn ervan overtuigd dat er voldoende kennis en digitale hulpmiddelen zijn om de zorg echt te verbeteren.</p>
-                <a class="text-15 leading-30 md:text-15 md:leading-14 lg:text-14 lg:leading-24 xl:text-15 xl:leading-30 my-[45px] text-orange font-nunito font-semibold w-fit flex justify-center items-center hover:opacity-[0.7] duration-300" href="/">Bekijk meer video’s op YouTube <span class="arrow-orange h-[8.94px] md:h-[7.14px] lg:h-[7.96px] xl:h-[8.94px]"><?php include get_template_directory() . '/img/icons/arrow-orange.php'; ?></span></a>
+                <a class="text-15 leading-30 md:text-15 md:leading-14 lg:text-14 lg:leading-24 xl:text-15 xl:leading-30 my-[45px] text-orange font-nunito font-bold w-fit flex justify-center items-center hover:opacity-[0.7] duration-300" href="/">Bekijk meer video’s op YouTube <span class="arrow-orange h-[8.94px] md:h-[7.14px] lg:h-[7.96px] xl:h-[8.94px]"><?php include get_template_directory() . '/img/icons/arrow-orange.php'; ?></span></a>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-2 lg:gap-5 xl:gap-6">
-                <div class="col-span-1">
+        </div>
+        <div class="swiper mySwiper  md:container relative pb-5">
+            <div class="swiper-wrapper mx-2 md:mx-0">
+                <div class="swiper-slide w-full max-w-[384px] aaa">
+                    <div class="iframe-overlay"></div>
                     <iframe class="aspect-video w-full" src="https://www.youtube-nocookie.com/embed/10PzKOd8aZs?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
-                    <h3 class="text-18 leading-30 md:text-15 md:leading-30 lg:text-18 lg:leading-30 xl:text-18 xl:leading-30 text-black font-nunito font-semibold pt-2 md:pt-2 lg:pt-3 xl:pt-[35px]">Innovatie van Doove Care Groep</h3>
+                    <h3 class="text-18 leading-30 md:text-15 md:leading-30 lg:text-18 lg:leading-30 xl:text-18 xl:leading-30 text-black font-nunito font-bold pt-2 md:pt-2 lg:pt-3 xl:pt-[35px]">Innovatie van Doove Care Groep</h3>
                 </div>
-                <div class="col-span-1">
+                <div class="swiper-slide w-full max-w-[384px]">
                     <iframe class="aspect-video w-full" src="https://www.youtube-nocookie.com/embed/10PzKOd8aZs?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
-                    <h3 class="text-18 leading-30 md:text-15 md:leading-30 lg:text-18 lg:leading-30 xl:text-18 xl:leading-30 text-black font-nunito font-semibold pt-2 md:pt-2 lg:pt-3 xl:pt-[35px]">Titel</h3>
+                    <h3 class="text-18 leading-30 md:text-15 md:leading-30 lg:text-18 lg:leading-30 xl:text-18 xl:leading-30 text-black font-nunito font-bold pt-2 md:pt-2 lg:pt-3 xl:pt-[35px]">Innovatie van Doove Care Groep</h3>
                 </div>
-                <div class="col-span-1">
+                <div class="swiper-slide w-full max-w-[384px]">
                     <iframe class="aspect-video w-full" src="https://www.youtube-nocookie.com/embed/10PzKOd8aZs?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
-                    <h3 class="text-18 leading-30 md:text-15 md:leading-30 lg:text-18 lg:leading-30 xl:text-18 xl:leading-30 text-black font-nunito font-semibold pt-2 md:pt-2 lg:pt-3 xl:pt-[35px]">Titel</h3>
+                    <h3 class="text-18 leading-30 md:text-15 md:leading-30 lg:text-18 lg:leading-30 xl:text-18 xl:leading-30 text-black font-nunito font-bold pt-2 md:pt-2 lg:pt-3 xl:pt-[35px]">Innovatie van Doove Care Groep</h3>
+                </div>
+                <div class="swiper-slide w-full max-w-[384px]">
+                    <iframe class="aspect-video w-full" src="https://www.youtube-nocookie.com/embed/10PzKOd8aZs?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
+                    <h3 class="text-18 leading-30 md:text-15 md:leading-30 lg:text-18 lg:leading-30 xl:text-18 xl:leading-30 text-black font-nunito font-bold pt-2 md:pt-2 lg:pt-3 xl:pt-[35px]">Innovatie van Doove Care Groep</h3>
+                </div>
+                <div class="swiper-slide w-full max-w-[384px]">
+                    <iframe class="aspect-video w-full" src="https://www.youtube-nocookie.com/embed/10PzKOd8aZs?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
+                    <h3 class="text-18 leading-30 md:text-15 md:leading-30 lg:text-18 lg:leading-30 xl:text-18 xl:leading-30 text-black font-nunito font-bold pt-2 md:pt-2 lg:pt-3 xl:pt-[35px]">Innovatie van Doove Care Groep</h3>
+                </div>
+                <div class="swiper-slide w-full max-w-[384px]">
+                    <iframe class="aspect-video w-full" src="https://www.youtube-nocookie.com/embed/10PzKOd8aZs?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
+                    <h3 class="text-18 leading-30 md:text-15 md:leading-30 lg:text-18 lg:leading-30 xl:text-18 xl:leading-30 text-black font-nunito font-bold pt-2 md:pt-2 lg:pt-3 xl:pt-[35px]">Innovatie van Doove Care Groep</h3>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
 </main>
 
-<script>
-    try {
-  const inner = document.querySelector(".inner-hero");
-  const section = document.querySelector(".section-hero");
-
-
-
-  window.onscroll = function () {
-    let value = window.pageYOffset / 2 / section.offsetTop + 1;
-    inner.style.transform = `scale(${value})`;
-
-  };
-} catch (error) { }
-
-</script>
 <?php get_footer(); ?>
 
 
