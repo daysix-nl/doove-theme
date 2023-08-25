@@ -10,12 +10,8 @@
    <!-- HEADER 2 -->
     <section class="h-[127px] md:h-[130px] lg:h-[140px] xl:h-[160px] mt-[82px] md:mt-[71px] lg:mt-[68px] bg-[#F4F4F5]">
         <div class="container h-full flex flex-col justify-center">
-            <p class="text-12 leading-20 md:text-12 md:leading-14 lg:text-12 lg:leading-18 xl:text-12 xl:leading-22 text-[#726A63]/[0.35] font-nunito font-semibold space-x-[15px] hidden md:flex"><a href="/">Home</a><span  class="block">></span><a href="/zorghulpmiddelen">Zorghulpmiddelen</a><span  class="block">></span><span class="block"><?php include('/wp-content/themes/doove-theme/componenten/show-current-caregory.php'); ?></span></p>
-            <h1 class="text-22 leading-33 md:text-25 md:leading-35 lg:text-31 lg:leading-41 xl:text-35 xl:leading-45 font-satoshi text-[#ED701F] font-semibold pt-1"><?php
-$include_path = $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/doove-theme/componenten/show-current-caregory.php';
-include($include_path);
-?>
-            </h1>
+            <p class="text-12 leading-20 md:text-12 md:leading-14 lg:text-12 lg:leading-18 xl:text-12 xl:leading-22 text-[#726A63]/[0.35] font-nunito font-semibold space-x-[15px] hidden md:flex"><a href="/">Home</a><span  class="block">></span><a href="/zorghulpmiddelen">Zorghulpmiddelen</a><span  class="block">></span><span class="block"><?php include $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/doove-theme/componenten/show-current-caregory.php'; ?></span></p>
+            <h1 class="text-22 leading-33 md:text-25 md:leading-35 lg:text-31 lg:leading-41 xl:text-35 xl:leading-45 font-satoshi text-[#ED701F] font-semibold pt-1"><?php include $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/doove-theme/componenten/show-current-caregory.php'; ?></h1>
         </div>
 
     </section>
