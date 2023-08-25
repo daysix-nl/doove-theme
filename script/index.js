@@ -120,8 +120,11 @@ try {
       window.scrollY ||
       window.scrollTop ||
       document.getElementsByTagName("html")[0].scrollTop;
-    let centerPoint =
-      section.offsetTop + section.offsetHeight / 2 - window.innerHeight / 1;
+    let centerPoint;
+    if (section) {
+      centerPoint =
+        section.offsetTop + section.offsetHeight / 2 - window.innerHeight / 1;
+    }
     let scale;
 
     // Scaling from 1 to 1.5 when scroll is from 0 to centerPoint of image
