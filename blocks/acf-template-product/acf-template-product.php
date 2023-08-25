@@ -5,17 +5,13 @@ else: ?>
     <?php 
     // Haal de categorieën op waartoe de huidige post behoort
     $categories = get_the_category();
-
     // Controleer of er categorieën zijn gevonden
     if (!empty($categories)) {
         // Haal de eerste categorie op (je kunt dit aanpassen als nodig)
         $current_category = $categories[0];
-
         // Haal de naam en slug van de categorie op
         $category_name = $current_category->name;
         $category_slug = $current_category->slug;
-
-       
     }
     ?>
 
