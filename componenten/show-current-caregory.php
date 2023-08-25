@@ -1,6 +1,6 @@
                 <?php
                     // Vervang dit pad met het juiste pad naar je WordPress installatie
-                    require_once('/Users/daysix/Local Sites/doove-care-groep/app/public/wp-load.php');
+                    // require_once('/Users/daysix/Local Sites/doove-care-groep/app/public/wp-load.php');
                     // Haal de volledige URL van de huidige pagina op
                     $current_url = $_SERVER['REQUEST_URI'];
                     // Vind de categorie-slug in de URL
