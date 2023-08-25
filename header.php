@@ -15,10 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <?php wp_head(); ?>
 </head>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <body <?php body_class( 'page-block doove' ); ?>>
 <header class="bg-white h-[82px] md:h-[71px] lg:h-[68px] w-full fixed top-0 z-[999] border-b-[1px] border-[#EBEBEB]">
   <div class="flex items-center justify-between h-full mr-2 md:mr-[25px] lg:mr-[15px] xl:mr-2">
