@@ -3680,6 +3680,10 @@ video {
     min-height: 82px;
   }
 
+  .xl\:min-h-\[60px\] {
+    min-height: 60px;
+  }
+
   .xl\:w-\[108px\] {
     width: 108px;
   }
