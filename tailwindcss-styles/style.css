@@ -2826,6 +2826,10 @@ video {
     min-height: 25px;
   }
 
+  .lg\:min-h-\[50px\] {
+    min-height: 50px;
+  }
+
   .lg\:w-\[1130px\] {
     width: 1130px;
   }
