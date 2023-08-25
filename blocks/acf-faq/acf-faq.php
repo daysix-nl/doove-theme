@@ -12,7 +12,8 @@ else: ?>
                     if( have_rows('faq_kolom_1_repeater') ):
                         while( have_rows('faq_kolom_1_repeater') ) : the_row(); ?>
 
-        
+                    <!-- ACCORDION ITEM -->
+                    <div class="accordion-div col-span-1  h-fit">
                         <!-- ACCORDION HEADER -->
                         <button class="accordion min-h-[65px] md:min-h-[65px] lg:min-h-[72px] xl:min-h-[82px] flex items-center px-[15px] lg:px-3 xl:px-4 bg-[#F4F4F5]">
                             <h4 class="font-satoshi font-semibold text-black text-18 leading-25 md:text-18 md:leading-25 lg:text-19 lg:leading-26 xl:text-22 xl:leading-30 w-[296px] md:w-[634px] lg:w-[482px] xl:w-[533px] text-left"><?php the_sub_field('titel');?></h4>
@@ -31,7 +32,7 @@ else: ?>
                                <div class="text-[#332E2A] font-nunito font-normal xl:text-18 xl:leading-30 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-18 leading-30 text-editor"><?php the_sub_field('tekst');?></div>
                             </div>
                         </div>
-            
+                    </div>
 
                      <?php
                         endwhile;
@@ -84,28 +85,5 @@ else: ?>
         </div>
     </section>
 
-    <script>
-try {
-  var acc = document.getElementsByClassName("accordion");
-  var i;
 
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.height === panel.scrollHeight + "px") {
-        panel.style.height = "0";
-      } else {
-        panel.style.height = panel.scrollHeight + "px";
-        for (let j = 0; j < acc.length; j++) {
-          if (this.classList != acc[j].classList) {
-            acc[j].classList.remove("active");
-            acc[j].nextElementSibling.style.height = "0";
-          }
-        }
-      }
-    });
-  }
-} catch (error) { }
-    </script>
 <?php endif; ?>
