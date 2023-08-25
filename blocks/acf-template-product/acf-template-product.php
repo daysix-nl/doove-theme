@@ -191,7 +191,8 @@ else: ?>
                     $related_query = new WP_Query($args);
                     if ($related_query->have_posts()) { 
                         while ($related_query->have_posts()) {
-                            $related_query->the_post(); ?>
+                            $related_query->the_post(); 
+                             $post_id = get_the_ID(); ?>
 
                               <a href="<?php the_permalink();?>" class="col-span-1 md:last-of-type:hidden lg:last-of-type:block">
                                     <div class="w-full aspect-square bg-[#F4F4F4] flex items-center justify-center">
