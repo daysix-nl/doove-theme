@@ -12,10 +12,9 @@ else: ?>
                     if( have_rows('faq_kolom_1_repeater') ):
                         while( have_rows('faq_kolom_1_repeater') ) : the_row(); ?>
 
-                    <!-- ACCORDION ITEM -->
-                    <div class="accordion-div col-span-1 bg-[#F4F4F5] h-fit">
+        
                         <!-- ACCORDION HEADER -->
-                        <button class="accordion min-h-[65px] md:min-h-[65px] lg:min-h-[72px] xl:min-h-[82px] flex items-center px-[15px] lg:px-3 xl:px-4">
+                        <button class="accordion min-h-[65px] md:min-h-[65px] lg:min-h-[72px] xl:min-h-[82px] flex items-center px-[15px] lg:px-3 xl:px-4 bg-[#F4F4F5]">
                             <h4 class="font-satoshi font-semibold text-black text-18 leading-25 md:text-18 md:leading-25 lg:text-19 lg:leading-26 xl:text-22 xl:leading-30 w-[296px] md:w-[634px] lg:w-[482px] xl:w-[533px] text-left"><?php the_sub_field('titel');?></h4>
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.529" height="11.61" viewBox="0 0 11.529 11.61">
@@ -32,7 +31,7 @@ else: ?>
                                <div class="text-[#332E2A] font-nunito font-normal xl:text-18 xl:leading-30 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-18 leading-30 text-editor"><?php the_sub_field('tekst');?></div>
                             </div>
                         </div>
-                    </div>
+            
 
                      <?php
                         endwhile;
@@ -77,8 +76,6 @@ else: ?>
                     else :
                     endif;
                 ?>
-
-
                 </div>
 
                
