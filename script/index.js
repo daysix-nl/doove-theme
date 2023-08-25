@@ -1,64 +1,72 @@
-// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-// We listen to the resize event
-window.addEventListener("resize", () => {
-  // We execute the same script as before
+try {
+  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
   let vh = window.innerHeight * 0.01;
+  // Then we set the value in the --vh custom property to the root of the document
   document.documentElement.style.setProperty("--vh", `${vh}px`);
-});
 
-// Select various groups of elements
-const buttons = document.querySelectorAll(".button-navbar");
-const overlayNavbar = document.querySelector(".menuitemoverlay");
-const overlayNavbarLinks = document.querySelectorAll("header a");
-const otherButtons = document.querySelectorAll(
-  "header button:not(.button-navbar)"
-);
-const overlayInnerDivs = document.querySelectorAll(".inner_div");
-const overlayHeader = document.querySelector(".overlay-header");
+  // We listen to the resize event
+  window.addEventListener("resize", () => {
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  });
 
-// Define function to remove 'active' class from elements
-function removeClassButtonNavbar() {
-  overlayNavbar.classList.remove("active");
-  overlayHeader.classList.add("hidden");
+} catch (error) {
 
-  overlayInnerDivs.forEach((div) => div.classList.remove("active"));
-  buttons.forEach((button) => button.classList.remove("active"));
 }
+try {
+  // Select various groups of elements
+  const buttons = document.querySelectorAll(".button-navbar");
+  const overlayNavbar = document.querySelector(".menuitemoverlay");
+  const overlayNavbarLinks = document.querySelectorAll("header a");
+  const otherButtons = document.querySelectorAll(
+    "header button:not(.button-navbar)"
+  );
+  const overlayInnerDivs = document.querySelectorAll(".inner_div");
+  const overlayHeader = document.querySelector(".overlay-header");
 
-// Apply 'mouseover' and 'click' events to buttons
-buttons.forEach((button) => {
-  ["mouseover", "click"].forEach((evt) => {
-    button.addEventListener(evt, () => {
-      removeClassButtonNavbar();
-      overlayHeader.classList.remove("hidden");
-      const targetId = button.getAttribute("data-target");
-      const targetElement = document.querySelector(`#${targetId}`);
+  // Define function to remove 'active' class from elements
+  function removeClassButtonNavbar() {
+    overlayNavbar.classList.remove("active");
+    overlayHeader.classList.add("hidden");
 
-      overlayNavbar.classList.add("active");
-      button.classList.add("active");
+    overlayInnerDivs.forEach((div) => div.classList.remove("active"));
+    buttons.forEach((button) => button.classList.remove("active"));
+  }
 
-      if (targetElement) {
-        targetElement.classList.add("active");
-      }
+  // Apply 'mouseover' and 'click' events to buttons
+  buttons.forEach((button) => {
+    ["mouseover", "click"].forEach((evt) => {
+      button.addEventListener(evt, () => {
+        removeClassButtonNavbar();
+        overlayHeader.classList.remove("hidden");
+        const targetId = button.getAttribute("data-target");
+        const targetElement = document.querySelector(`#${targetId}`);
+
+        overlayNavbar.classList.add("active");
+        button.classList.add("active");
+
+        if (targetElement) {
+          targetElement.classList.add("active");
+        }
+      });
     });
   });
-});
 
-// Apply 'mouseover' and 'click' events to otherButtons and overlayNavbarLinks
-[...otherButtons, ...overlayNavbarLinks].forEach((element) => {
-  ["mouseover", "click"].forEach((evt) => {
-    element.addEventListener(evt, removeClassButtonNavbar);
+  // Apply 'mouseover' and 'click' events to otherButtons and overlayNavbarLinks
+  [...otherButtons, ...overlayNavbarLinks].forEach((element) => {
+    ["mouseover", "click"].forEach((evt) => {
+      element.addEventListener(evt, removeClassButtonNavbar);
+    });
   });
-});
 
-// Apply 'mouseover' event to overlayHeader
-overlayHeader.addEventListener("mouseover", removeClassButtonNavbar);
+  // Apply 'mouseover' event to overlayHeader
+  overlayHeader.addEventListener("mouseover", removeClassButtonNavbar);
 
 
+} catch (error) {
+
+}
 
 /**********************/
 /**** hamburger ***/
@@ -256,59 +264,63 @@ try {
   tabWrappers.forEach((tabWrapper, index) => inittab(tabWrapper));
 } catch (error) { }
 
-// try {
-//   /**********************/
-//   /**** accordion ***/
-//   /**********************/
-//   const acc = document.getElementsByClassName("accordion");
+try {
+  /**********************/
+  /**** accordion ***/
+  /**********************/
+  const acc = document.getElementsByClassName("accordion");
 
-//   for (let i = 0; i < acc.length; i++) {
-//     acc[i].addEventListener("click", function () {
-//       const panel = this.nextElementSibling;
-//       this.classList.toggle("active");
-//       panel.style.height =
-//         panel.style.height === panel.scrollHeight + "px"
-//           ? "0"
-//           : panel.scrollHeight + "px";
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      const panel = this.nextElementSibling;
+      this.classList.toggle("active");
+      panel.style.height =
+        panel.style.height === panel.scrollHeight + "px"
+          ? "0"
+          : panel.scrollHeight + "px";
 
-//       for (let j = 0; j < acc.length; j++) {
-//         if (this !== acc[j]) {
-//           acc[j].classList.remove("active");
-//           acc[j].nextElementSibling.style.height = "0";
-//         }
-//       }
-//     });
-//   }
-// } catch (error) {}
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const searchInElements = document.querySelectorAll('.search-in');
-  const closeButton = document.querySelector('.close');
-
-  searchInElements.forEach(function (searchInElement) {
-    searchInElement.addEventListener('click', function () {
-      const searchOutElement = document.querySelector('.search-out');
-
-      if (searchOutElement) {
-        searchOutElement.classList.toggle('open');
-      }
-    });
-  });
-
-  if (closeButton) {
-    closeButton.addEventListener('click', function () {
-      const searchOutElement = document.querySelector('.search-out');
-
-      if (searchOutElement) {
-        searchOutElement.classList.remove('open');
+      for (let j = 0; j < acc.length; j++) {
+        if (this !== acc[j]) {
+          acc[j].classList.remove("active");
+          acc[j].nextElementSibling.style.height = "0";
+        }
       }
     });
   }
-});
+} catch (error) { }
 
 
+
+try {
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchInElements = document.querySelectorAll('.search-in');
+    const closeButton = document.querySelector('.close');
+
+    searchInElements.forEach(function (searchInElement) {
+      searchInElement.addEventListener('click', function () {
+        const searchOutElement = document.querySelector('.search-out');
+
+        if (searchOutElement) {
+          searchOutElement.classList.toggle('open');
+        }
+      });
+    });
+
+    if (closeButton) {
+      closeButton.addEventListener('click', function () {
+        const searchOutElement = document.querySelector('.search-out');
+
+        if (searchOutElement) {
+          searchOutElement.classList.remove('open');
+        }
+      });
+    }
+  });
+
+
+} catch (error) {
+
+}
 
 /*********************/
 /*** contact overlay ***/
