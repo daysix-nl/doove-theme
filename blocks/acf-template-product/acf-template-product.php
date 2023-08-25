@@ -2,14 +2,6 @@
 if (isset($block['data']['preview_image_help'])): /* rendering in inserter preview  */
     echo '<img src="' . $block['data']['preview_image_help'] . '" style="width:100%; height:auto;">';
 else: ?>
-    <!-- TEMPLATE PRODUCT -->
- <div class="overflow-x-hidden bg-<?php the_field('achtergrond_kleur');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
-    <section class="xl:pt-11 xl:pb-3 lg:pb-[25px] md:pb-5 mb-4 pt-10">
-        <div class="container h-full flex flex-col justify-center">
-            <p class="text-12 leading-20 md:text-12 md:leading-14 lg:text-12 lg:leading-18 xl:text-12 xl:leading-22 text-[#726A63]/[0.35] font-nunito font-semibold space-x-[15px] hidden md:flex"><a href="/">Home</a><span  class="block">></span><a href="/zorghulpmiddelen">Zorghulpmiddelen</a><span  class="block">></span><span class="block"><?php the_title() ?></span></p>
-        </div>
-    </section>
-
     <?php 
     // Haal de categorieën op waartoe de huidige post behoort
     $categories = get_the_category();
@@ -23,11 +15,17 @@ else: ?>
         $category_name = $current_category->name;
         $category_slug = $current_category->slug;
 
-        // Toon de naam en slug van de categorie
-        echo "Huidige categorie naam: " . $category_name . "<br>";
-        echo "Huidige categorie slug: " . $category_slug;
+       
     }
     ?>
+
+    <!-- TEMPLATE PRODUCT -->
+ <div class="overflow-x-hidden bg-<?php the_field('achtergrond_kleur');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
+    <section class="xl:pt-11 xl:pb-3 lg:pb-[25px] md:pb-5 mb-4 pt-10">
+        <div class="container h-full flex flex-col justify-center">
+            <p class="text-12 leading-20 md:text-12 md:leading-14 lg:text-12 lg:leading-18 xl:text-12 xl:leading-22 text-[#726A63]/[0.35] font-nunito font-semibold space-x-[15px] hidden md:flex"><a href="/">Home</a><span  class="block">></span><a href="/zorghulpmiddelen">Zorghulpmiddelen</a><span  class="block">></span><a href="/producten/categorie-<?php echo $category_slug;?>"><?php echo $category_name; ?></a><span  class="block">></span><span class="block"><?php the_title() ?></span></p>
+        </div>
+    </section>
      <section class="xl:pb-[73px] lg:pb-[65px] md:pb-[63px] pb-4 ">
         <div class="container grid grid-cols-2 lg:gap-8 md:gap-[35px]">
         <div class="flex-col w-full md:hidden flex col-span-2">
