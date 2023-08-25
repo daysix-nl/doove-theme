@@ -18,7 +18,7 @@ else: ?>
                                 <div class="col-span-1 px-[unset] md:px-2 lg:px-[27px] xl:px-3 pt-[unset] lg:pt-4 xl:pt-5 pb-[unset] lg:pb-3 xl:pb-3 grid rounded-xl relative uspcard">
                                     <div class="grid gap-2 md:gap-3 lg:gap-[35px] xl:gap-3 content-between">
                                         <div class="grid gap-[35px] md:gap-[25px] lg:gap-3">
-                                            <h3 class="text-25 leading-30 md:text-21 md:leading-28 lg:text-22 lg:leading-25 xl:text-25 xl:leading-30 font-satoshi text-black font-semibold titel"><?php the_sub_field('item_1_titel');?></h3>
+                                            <h3 class="text-25 leading-30 md:text-21 md:leading-28 lg:text-22 lg:leading-25 xl:text-25 xl:leading-30 font-satoshi text-black font-semibold titel lg:min-h-[25px]"><?php the_sub_field('item_1_titel');?></h3>
                                             <p class="text-18 leading-30 md:text-15 md:leading-25 lg:text-15 lg:leading-25 xl:text-18 xl:leading-30 font-nunito text-black font-normal content"><?php the_sub_field('item_1_tekst');?></p>
                                         </div>
                                     </div>
@@ -30,7 +30,7 @@ else: ?>
                                 <div class="col-span-1 px-[unset] md:px-2 lg:px-[27px] xl:px-3 pt-[unset] lg:pt-4 xl:pt-5 pb-[unset] lg:pb-3 xl:pb-3 grid rounded-xl relative uspcard">
                                     <div class="grid gap-2 md:gap-3 lg:gap-[35px] xl:gap-3 content-between">
                                         <div class="grid gap-[35px] md:gap-[25px] lg:gap-3">
-                                            <h3 class="text-25 leading-30 md:text-21 md:leading-28 lg:text-22 lg:leading-25 xl:text-25 xl:leading-30 font-satoshi text-[#4EBE5B] font-semibold titel green"><?php the_sub_field('item_2_titel');?></h3>
+                                            <h3 class="text-25 leading-30 md:text-21 md:leading-28 lg:text-22 lg:leading-25 xl:text-25 xl:leading-30 font-satoshi text-[#4EBE5B] font-semibold titel green lg:min-h-[25px]"><?php the_sub_field('item_2_titel');?></h3>
                                             <p class="text-18 leading-30 md:text-15 md:leading-25 lg:text-15 lg:leading-25 xl:text-18 xl:leading-30 font-nunito text-[#4EBE5B] font-normal content green"><?php the_sub_field('item_2_tekst');?></p>
                                         </div>
                                     </div>
@@ -42,7 +42,7 @@ else: ?>
                                 <a href="<?php the_sub_field('item_3_link');?>" class="col-span-1 px-[unset] md:px-2 lg:px-[27px] xl:px-3 pt-[unset] lg:pt-4 xl:pt-5 pb-[unset] lg:pb-3 xl:pb-3 grid lg:hover:bg-white duration-300 rounded-xl relative uspcard">
                                     <div class="grid gap-2 md:gap-3 lg:gap-[35px] xl:gap-3 content-between">
                                         <div class="grid gap-[35px] md:gap-[25px] lg:gap-3">
-                                            <h3 class="text-25 leading-30 md:text-21 md:leading-28 lg:text-22 lg:leading-25 xl:text-25 xl:leading-30 font-satoshi text-black font-semibold titel"><?php the_sub_field('item_3_titel');?></h3>
+                                            <h3 class="text-25 leading-30 md:text-21 md:leading-28 lg:text-22 lg:leading-25 xl:text-25 xl:leading-30 font-satoshi text-black font-semibold titel lg:min-h-[25px]"><?php the_sub_field('item_3_titel');?></h3>
                                             <p class="text-18 leading-30 md:text-15 md:leading-25 lg:text-15 lg:leading-25 xl:text-18 xl:leading-30 font-nunito text-black font-normal content"><?php the_sub_field('item_3_tekst');?></p>
                                         </div>
                                         <p class="text-12 leading-27 md:text-12 md:leading-17 lg:text-11 lg:leading-23 xl:text-12 xl:leading-17 font-satoshi text-orange md:text-black font-semibold uppercase content tracking-[.6px]"><?php the_sub_field('item_3_c2a');?></p>
@@ -56,7 +56,7 @@ else: ?>
                                     <a href="<?php the_sub_field('item_4_link');?>" class="col-span-1 px-[unset] md:px-2 lg:px-[27px] xl:px-3 pt-[unset] lg:pt-4 xl:pt-5 pb-[unset] lg:pb-3 xl:pb-3 grid lg:hover:bg-white duration-300 rounded-xl relative uspcard">
                                         <div class="grid gap-2 md:gap-3 lg:gap-[35px] xl:gap-3 content-between">
                                             <div class="grid gap-[35px] md:gap-[25px] lg:gap-3">
-                                                <h3 class="text-25 leading-30 md:text-21 md:leading-28 lg:text-22 lg:leading-25 xl:text-25 xl:leading-30 font-satoshi text-[#4EBE5B] font-semibold green"><?php the_sub_field('item_4_titel');?></h3>
+                                                <h3 class="text-25 leading-30 md:text-21 md:leading-28 lg:text-22 lg:leading-25 xl:text-25 xl:leading-30 font-satoshi text-[#4EBE5B] font-semibold green lg:min-h-[25px]"><?php the_sub_field('item_4_titel');?></h3>
                                                 <p class="text-18 leading-30 md:text-15 md:leading-25 lg:text-15 lg:leading-25 xl:text-18 xl:leading-30 font-nunito text-[#4EBE5B] font-normal green"><?php the_sub_field('item_4_tekst');?></p>
                                             </div>
                                             <p class="text-12 leading-27 md:text-12 md:leading-17 lg:text-11 lg:leading-23 xl:text-12 xl:leading-17 font-satoshi text-[#4EBE5B] font-semibold uppercase green tracking-[.6px]"><?php the_sub_field('item_4_c2a');?></p>
