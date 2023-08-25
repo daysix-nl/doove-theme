@@ -132,7 +132,9 @@ try {
       scale = 1.5 - (scrollPosition / centerPoint) * 0.5;
     }
     scale = Math.max(Math.min(scale, 1.5), 1); // Clamp scale value between 1 and 1.5
-    inner.style.transform = `scale(${scale})`;
+    if (inner) {
+      inner.style.transform = `scale(${scale})`;
+    }
   });
 } catch (error) { }
 
