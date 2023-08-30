@@ -14,7 +14,7 @@ else: ?>
                     <?php while( have_rows('uitgelichte_items_repeater') ): the_row();  ?>
                         <div class="col-span-1 w-full">
                             <div class="h-[148px] md:h-[142px] lg:h-[131px] xl:h-[148px] flex items-start">
-                                <img src="<?php the_sub_field('afbeelding');?>" alt="<?php the_sub_field('tekst');?>" class="max-h-[148px] md:max-h-[142px] lg:max-h-[131px] xl:max-h-[148px] mix-blend-darken">
+                                <img src="<?php the_sub_field('afbeelding');?>" alt="Doove Care Groep" class="max-h-[148px] md:max-h-[142px] lg:max-h-[131px] xl:max-h-[148px] mix-blend-darken">
                             </div>
                             <p class="text-14 leading-22 md:text-12 md:leading-19 lg:text-12 lg:leading-19 xl:text-14 xl:leading-22 font-nunito text-black font-normal"><?php the_sub_field('tekst');?></p>
                         </div>
