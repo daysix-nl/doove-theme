@@ -1,7 +1,7 @@
 {
   "name": "acf-content-blok-6",
   "title": "Content blok 6",
-  "description": "Een content blok met tekst en een afbeelding.",
+  "description": "Een content blok met tekst en een afbeelding (link of rechts).",
   "category": "bibliotheek",
   "icon": "editor-alignleft",
   "keywords": [
