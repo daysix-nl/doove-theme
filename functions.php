@@ -159,7 +159,7 @@ function get_blocks() {
 	$theme   = wp_get_theme();
 	$blocks  = get_option( 'cwp_blocks' );
 	$version = get_option( 'cwp_blocks_version' );
-	if ( empty( $blocks ) || version_compare( $theme->get( 'Version' ), $version ) || ( function_exists( 'wp_get_environment_type' ) && 'production' !== wp_get_environment_type() ) ) {
+	if ( empty( $blocks ) || version_compare( $theme->get( 'Version' ), $version ) || ( function_exists( 'wp_get_environment_type' )  ) ) {
 		$blocks = scandir( get_template_directory() . '/blocks/' );
 		$blocks = array_values( array_diff( $blocks, array( '..', '.', '.DS_Store', '_base-block' ) ) );
 
