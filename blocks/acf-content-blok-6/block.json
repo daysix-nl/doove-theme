@@ -1,0 +1,27 @@
+{
+  "name": "acf-content-blok-6",
+  "title": "Content blok 6",
+  "description": "Een content blok met tekst en een afbeelding.",
+  "category": "bibliotheek",
+  "icon": "editor-alignleft",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-content-blok-6.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/content-blok-6.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}
