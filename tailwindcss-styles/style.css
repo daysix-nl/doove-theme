@@ -639,6 +639,10 @@ video {
   margin-top: 45px;
   margin-bottom: 45px;
 }
+.mx-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
 .mr-\[unset\] {
   margin-right: unset;
 }

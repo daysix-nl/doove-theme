@@ -146,7 +146,7 @@
             "label": "Sales - Email",
             "name": "sales_email",
             "aria-label": "",
-            "type": "text",
+            "type": "email",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -155,8 +155,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "sales@doove.nl",
-            "maxlength": "",
+            "default_value": "",
             "placeholder": "",
             "prepend": "",
             "append": ""
@@ -186,7 +185,7 @@
             "label": "Verhuur - Email",
             "name": "verhuur_email",
             "aria-label": "",
-            "type": "text",
+            "type": "email",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -195,8 +194,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "verhuur@doove.nl",
-            "maxlength": "",
+            "default_value": "",
             "placeholder": "",
             "prepend": "",
             "append": ""
@@ -226,7 +224,7 @@
             "label": "WLZ \/ Verzekerde Zorg - Email",
             "name": "wlz_verzekerde_zorg_email",
             "aria-label": "",
-            "type": "text",
+            "type": "email",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -235,8 +233,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "verzekerdezorg@doove.nl",
-            "maxlength": "",
+            "default_value": "",
             "placeholder": "",
             "prepend": "",
             "append": ""
@@ -266,7 +263,7 @@
             "label": "Service, Reparatie en onderhoud - Email",
             "name": "service_reparatie_onderhoud_email",
             "aria-label": "",
-            "type": "text",
+            "type": "email",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -275,8 +272,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "service@doove.nl",
-            "maxlength": "",
+            "default_value": "",
             "placeholder": "",
             "prepend": "",
             "append": ""
@@ -306,7 +302,7 @@
             "label": "Planning - Email",
             "name": "planning_email",
             "aria-label": "",
-            "type": "text",
+            "type": "email",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -315,8 +311,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "planning@doove.nl",
-            "maxlength": "",
+            "default_value": "",
             "placeholder": "",
             "prepend": "",
             "append": ""
@@ -480,5 +475,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1694632999
+    "modified": 1694636117
 }

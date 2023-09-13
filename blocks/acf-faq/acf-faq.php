@@ -15,7 +15,7 @@ else: ?>
                     <!-- ACCORDION ITEM -->
                     <div class="accordion-div col-span-1  h-fit">
                         <!-- ACCORDION HEADER -->
-                        <button class="accordion min-h-[65px] md:min-h-[65px] lg:min-h-[72px] xl:min-h-[82px] flex items-center px-[15px] lg:px-3 xl:px-4 bg-[#F4F4F5]">
+                        <button class="accordion min-h-[65px] md:min-h-[65px] lg:min-h-[72px] xl:min-h-[82px] flex items-center px-[15px] lg:px-3 xl:px-4 bg-[#F4F4F5] w-full">
                             <h4 class="font-satoshi font-semibold text-black text-18 leading-25 md:text-18 md:leading-25 lg:text-19 lg:leading-26 xl:text-22 xl:leading-30 w-[296px] md:w-[634px] lg:w-[482px] xl:w-[533px] text-left"><?php the_sub_field('titel');?></h4>
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.529" height="11.61" viewBox="0 0 11.529 11.61">
