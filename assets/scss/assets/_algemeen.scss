@@ -1,6 +1,6 @@
-html {
-  scroll-behavior: smooth;
-}
+// html {
+//   scroll-behavior: smooth;
+// }
 
 body {
   overflow-x: hidden;
@@ -30,7 +30,6 @@ body {
   /* 20 woorden voor afbreken */
 }
 
-
 .text-editor {
   display: grid;
   gap: 2rem;
@@ -51,7 +50,7 @@ body {
     }
 
     a {
-      color: #ED701F;
+      color: #ed701f;
       text-decoration: underline;
     }
   }
@@ -61,7 +60,6 @@ body {
     list-style-position: outside;
     list-style-image: none;
     margin-left: 2rem;
-
   }
 
   ol {
@@ -69,11 +67,10 @@ body {
     list-style-position: outside;
     list-style-image: none;
     margin-left: 2rem;
-
   }
 
   blockquote {
-    border-left: 2px solid #ED701F;
+    border-left: 2px solid #ed701f;
 
     p,
     h1,
@@ -120,7 +117,7 @@ body {
     line-height: 33px;
     font-weight: 600;
     font-family: satoshi;
-    color: #ED701F;
+    color: #ed701f;
 
     // MD
     @media (min-width: 768px) {
@@ -147,7 +144,6 @@ body {
     aspect-ratio: 16/9 !important;
   }
 }
-
 
 .padding-top-xs {
   padding-top: 20px;
@@ -186,7 +182,6 @@ body {
     padding-bottom: 35px;
   }
 }
-
 
 .padding-top-s {
   padding-top: 30px;
