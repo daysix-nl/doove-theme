@@ -57,6 +57,10 @@
     padding-bottom: 10px !important;
     max-width: 100%;
     color: #777675;
+
+    &::placeholder {
+      color: #777675 !important;
+    }
     // margin-top: 25px !important;
   }
 

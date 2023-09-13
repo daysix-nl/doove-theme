@@ -9,12 +9,12 @@ else: ?>
 
                 <?php
                 // add page for to go to the next 9 posts
-                $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                         $loop = new WP_Query( array(
                             'post_type' => 'news',
-                            'posts_per_page' => 9,
+                            'posts_per_page' => 4,
                             'orderby' => 'date',
-                            'page' => $paged,
+                            'paged' => $paged, 
                             'order' => 'DESC'
                         )
                         );
@@ -31,7 +31,17 @@ else: ?>
                 <?php endwhile; wp_reset_query(); ?>  
                 <!-- make button here -->
                 <div class="col-span-2 md:col-span-1 flex items-center justify-center">
-                    <a href="<?php echo get_post_type_archive_link( 'news' ); ?>" class="btn btn-primary">Bekijk meer</a>
+                        <div class="pagination-wordpress">
+                            <?php 
+                                $big = 999999999; 
+                                echo paginate_links( array(
+                                    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                                    'format' => '?paged=%#%',
+                                    'current' => max( 1, get_query_var('paged') ),
+                                    'total' => $loop->max_num_pages
+                                ) );
+                            ?>
+                        </div>
                 </div>
             </div>
         </div>
