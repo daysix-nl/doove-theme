@@ -8,10 +8,13 @@ else: ?>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[15px] md:gap-x-3 lg:gap-x-[25px] xl:gap-x-3 gap-y-[15px] md:gap-y-4 lg:gap-y-[35px] xl:gap-y-3">
 
                 <?php
+                // add page for to go to the next 9 posts
+                $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
                         $loop = new WP_Query( array(
                             'post_type' => 'news',
-                            'posts_per_page' => -1,
+                            'posts_per_page' => 9,
                             'orderby' => 'date',
+                            'page' => $paged,
                             'order' => 'DESC'
                         )
                         );
@@ -26,6 +29,10 @@ else: ?>
                         <p class="font-satoshi font-semibold text-14 leading-24 uppercase text-[#ED701F] pt-[15px]">Lees meer</p>
                     </a>
                 <?php endwhile; wp_reset_query(); ?>  
+                <!-- make button here -->
+                <div class="col-span-2 md:col-span-1 flex items-center justify-center">
+                    <a href="<?php echo get_post_type_archive_link( 'news' ); ?>" class="btn btn-primary">Bekijk meer</a>
+                </div>
             </div>
         </div>
     </section>
