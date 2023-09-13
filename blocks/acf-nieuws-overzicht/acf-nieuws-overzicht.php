@@ -12,7 +12,7 @@ else: ?>
                         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                         $loop = new WP_Query( array(
                             'post_type' => 'news',
-                            'posts_per_page' => 4,
+                            'posts_per_page' => 9,
                             'orderby' => 'date',
                             'paged' => $paged, 
                             'order' => 'DESC'
