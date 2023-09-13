@@ -73,7 +73,7 @@
     <div class="lg:mx-5 xl:mx-6 lg:pt-3 xl:pt-4">
       <div class="grid grid-cols-2 ">
         <div class="col-span-1">
-          <h3 class="lg:text-15 lg:leading-19 xl:text-16 xl:leading-22 font-satoshi font-bold text-black"><a href=""<?php the_field('link', 'option');?>"><?php the_field('titel', 'option');?></a></h3>
+          <h3 class="lg:text-15 lg:leading-19 xl:text-16 xl:leading-22 font-satoshi font-bold text-black"><a href="<?php the_field('link', 'option');?>"><?php the_field('titel', 'option');?></a></h3>
         </div>
         <div class="col-span-1 flex justify-end">
           <a class="lg:text-14 lg:leading-24 xl:text-15 xl:leading-30 text-orange font-nunito font-bold w-fit flex justify-center items-center hover:opacity-[0.7] duration-300" href="<?php the_field('link', 'option');?>"><?php the_field('link_tekst', 'option');?> <span class="arrow-orange h-[8.94px] md:h-[7.14px] lg:h-[7.96px] xl:h-[8.94px]"><?php include get_template_directory() . '/img/icons/arrow-orange.php'; ?></span></a>
