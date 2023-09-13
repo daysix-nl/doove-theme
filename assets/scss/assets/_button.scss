@@ -39,3 +39,20 @@ header {
     }
   }
 }
+
+.pagination-wordpress {
+  a {
+    color: rgb((51, 46, 42);
+    font-size: 16px;
+    font-weight: 400;
+
+    &.prev {
+      margin-right: 10px;
+    }
+
+    &.next {
+      margin-left: 10px;
+    }
+  }
+  
+}

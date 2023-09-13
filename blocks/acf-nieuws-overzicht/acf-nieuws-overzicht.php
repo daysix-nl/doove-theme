@@ -34,7 +34,7 @@ else: ?>
         </div>
         <div class="container flex">
           
-            <div class="pagination-wordpress mx-auto">
+            <div class="pagination-wordpress mx-auto mt-5">
                 <?php 
                     $big = 999999999; 
                     echo paginate_links( array(
