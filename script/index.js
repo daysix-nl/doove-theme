@@ -10,10 +10,7 @@ try {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
   });
-
-} catch (error) {
-
-}
+} catch (error) {}
 try {
   // Select various groups of elements
   const buttons = document.querySelectorAll(".button-navbar");
@@ -62,11 +59,7 @@ try {
 
   // Apply 'mouseover' event to overlayHeader
   overlayHeader.addEventListener("mouseover", removeClassButtonNavbar);
-
-
-} catch (error) {
-
-}
+} catch (error) {}
 
 /**********************/
 /**** hamburger ***/
@@ -109,7 +102,7 @@ try {
       submenuOverlay.classList.toggle("open");
     });
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   const inner = document.querySelector(".inner-hero");
@@ -136,11 +129,12 @@ try {
       inner.style.transform = `scale(${scale})`;
     }
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1.2,
+    allowTouchMove: false,
     spaceBetween: 30,
     loop: true,
     preventLinksPropagation: false,
@@ -166,30 +160,30 @@ try {
       },
     },
   });
-} catch (error) { }
+} catch (error) {}
 
-var slides = document.querySelectorAll(".swiper-slide");
-var isMouseDown = false;
+// var slides = document.querySelectorAll(".swiper-slide");
+// var isMouseDown = false;
 
-slides.forEach(function (slide) {
-  var iframe = slide.querySelector("iframe");
+// slides.forEach(function (slide) {
+//   var iframe = slide.querySelector("iframe");
 
-  slide.addEventListener("mousedown", function () {
-    isMouseDown = true;
-    iframe.style.pointerEvents = "none"; // disable pointer events when mouse is down
-  });
+//   slide.addEventListener("mousedown", function () {
+//     isMouseDown = true;
+//     iframe.style.pointerEvents = "none"; // disable pointer events when mouse is down
+//   });
 
-  slide.addEventListener("mouseup", function () {
-    isMouseDown = false;
-    iframe.style.pointerEvents = "all"; // enable pointer events when mouse is up
-  });
+//   slide.addEventListener("mouseup", function () {
+//     isMouseDown = false;
+//     iframe.style.pointerEvents = "all"; // enable pointer events when mouse is up
+//   });
 
-  slide.addEventListener("mousemove", function () {
-    if (isMouseDown) {
-      iframe.style.pointerEvents = "none"; // disable pointer events when mouse is moving and mouse is down
-    }
-  });
-});
+//   slide.addEventListener("mousemove", function () {
+//     if (isMouseDown) {
+//       iframe.style.pointerEvents = "none"; // disable pointer events when mouse is moving and mouse is down
+//     }
+//   });
+// });
 
 try {
   var galleryThumbs = new Swiper(".swiper-container.thumbs", {
@@ -225,7 +219,7 @@ try {
       prevEl: ".swiper-button-prev",
     },
   });
-} catch (error) { }
+} catch (error) {}
 
 try {
   function inittab(tabWrapper, activeTab = 1) {
@@ -267,7 +261,7 @@ try {
 
   const tabWrappers = document.querySelectorAll(".tab-wrapper");
   tabWrappers.forEach((tabWrapper, index) => inittab(tabWrapper));
-} catch (error) { }
+} catch (error) {}
 
 try {
   /**********************/
@@ -292,40 +286,34 @@ try {
       }
     });
   }
-} catch (error) { }
-
-
+} catch (error) {}
 
 try {
-  document.addEventListener('DOMContentLoaded', function () {
-    const searchInElements = document.querySelectorAll('.search-in');
-    const closeButton = document.querySelector('.close');
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchInElements = document.querySelectorAll(".search-in");
+    const closeButton = document.querySelector(".close");
 
     searchInElements.forEach(function (searchInElement) {
-      searchInElement.addEventListener('click', function () {
-        const searchOutElement = document.querySelector('.search-out');
+      searchInElement.addEventListener("click", function () {
+        const searchOutElement = document.querySelector(".search-out");
 
         if (searchOutElement) {
-          searchOutElement.classList.toggle('open');
+          searchOutElement.classList.toggle("open");
         }
       });
     });
 
     if (closeButton) {
-      closeButton.addEventListener('click', function () {
-        const searchOutElement = document.querySelector('.search-out');
+      closeButton.addEventListener("click", function () {
+        const searchOutElement = document.querySelector(".search-out");
 
         if (searchOutElement) {
-          searchOutElement.classList.remove('open');
+          searchOutElement.classList.remove("open");
         }
       });
     }
   });
-
-
-} catch (error) {
-
-}
+} catch (error) {}
 
 /*********************/
 /*** contact overlay ***/
@@ -334,9 +322,7 @@ try {
   const contactButton = document.querySelectorAll("#proefaanvragen");
   const contactOverlay = document.querySelector(".overlay-popup");
   const contactClose = document.querySelector(".button-close");
-  const ContactBackground = document.querySelector(
-    ".overlay-popup-background"
-  );
+  const ContactBackground = document.querySelector(".overlay-popup-background");
   for (let i = 0; i < contactButton.length; i++) {
     contactButton[i].addEventListener("click", () => {
       contactOverlay.classList.add("open");
@@ -351,7 +337,7 @@ try {
       ContactBackground.classList.remove("open");
     });
   }
-} catch (error) { }
+} catch (error) {}
 
 /*********************/
 /*** offerte overlay ***/
@@ -377,4 +363,4 @@ try {
       offerteBackground.classList.remove("open");
     });
   }
-} catch (error) { }
+} catch (error) {}
