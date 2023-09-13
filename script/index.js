@@ -14,16 +14,19 @@ try {
 try {
   // Select various groups of elements
   const buttons = document.querySelectorAll(".button-navbar");
-  const overlayNavbar = document.querySelector(".menuitemoverlay");
+
   const overlayNavbarLinks = document.querySelectorAll("header a");
   const otherButtons = document.querySelectorAll(
     "header button:not(.button-navbar)"
   );
-  const overlayInnerDivs = document.querySelectorAll(".inner_div");
   const overlayHeader = document.querySelector(".overlay-header");
 
   // Define function to remove 'active' class from elements
   function removeClassButtonNavbar() {
+    const overlayNavbar = document.querySelector(".menuitemoverlay");
+    const overlayInnerDivs = document.querySelectorAll(".inner_div");
+    const overlayHeader = document.querySelector(".overlay-header");
+    const buttons = document.querySelectorAll(".button-navbar");
     overlayNavbar.classList.remove("active");
     overlayHeader.classList.add("hidden");
 
@@ -39,7 +42,7 @@ try {
         overlayHeader.classList.remove("hidden");
         const targetId = button.getAttribute("data-target");
         const targetElement = document.querySelector(`#${targetId}`);
-
+        const overlayNavbar = document.querySelector(".menuitemoverlay");
         overlayNavbar.classList.add("active");
         button.classList.add("active");
 

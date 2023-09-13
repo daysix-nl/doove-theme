@@ -16,10 +16,9 @@
                     <?php
                     if( have_rows('primaire_footer_menu_rij_1_repeater', 'option') ):
                         while( have_rows('primaire_footer_menu_rij_1_repeater', 'option') ) : the_row(); ?>
-                         <a href="<?php the_sub_field('link', 'option');?>" class="text-16 leading-36 md:text-17 md:leading-36 lg:text-15 lg:leading-30 xl:text-18 xl:leading-36 font-nunito text-<?php the_sub_field('titel_kleur', 'option');?> font-medium hover:opacity-[0.7] duration-300 w-fit"><?php the_sub_field('titel', 'option');?></a>
+                            <a href="<?php the_sub_field('link', 'option'); ?>" class="text-16 leading-36 md:text-17 md:leading-36 lg:text-15 lg:leading-30 xl:text-18 xl:leading-36 font-nunito text-<?php the_sub_field('titel_kleur', 'option');?> font-medium hover:opacity-[0.7] duration-300 w-fit"><?php the_sub_field('titel', 'option');?></a>
                         <?php
                         endwhile;
-                    else :
                     endif;
                     ?>
                 </div>
@@ -28,10 +27,9 @@
                      <?php
                     if( have_rows('primaire_footer_menu_rij_2_repeater', 'option') ):
                         while( have_rows('primaire_footer_menu_rij_2_repeater', 'option') ) : the_row(); ?>
-                         <a href="<?php the_sub_field('link', 'option');?>" class="text-16 leading-36 md:text-17 md:leading-36 lg:text-15 lg:leading-30 xl:text-18 xl:leading-36 font-nunito text-<?php the_sub_field('titel_kleur', 'option');?> font-medium hover:opacity-[0.7] duration-300 w-fit"><?php the_sub_field('titel', 'option');?></a>
+                         <a href="<?php the_sub_field('link', 'option'); ?>" class="text-16 leading-36 md:text-17 md:leading-36 lg:text-15 lg:leading-30 xl:text-18 xl:leading-36 font-nunito text-<?php the_sub_field('titel_kleur', 'option');?> font-medium hover:opacity-[0.7] duration-300 w-fit"><?php the_sub_field('titel', 'option');?></a>
                         <?php
                         endwhile;
-                    else :
                     endif;
                     ?>
                 </div>

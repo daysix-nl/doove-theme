@@ -1,7 +1,8 @@
 <?php
 if (isset($block['data']['preview_image_help'])): /* rendering in inserter preview  */
     echo '<img src="' . $block['data']['preview_image_help'] . '" style="width:100%; height:auto;">';
-else: ?>
+else: 
+?>
     <!-- CONTACT -->
 <section class="bg-white">
         <div class="container grid grid-cols-1 lg:grid-cols-2 items-start pt-5 pb-[35px] md:pt-4 md:pb-4 lg:pt-[85px] lg:pb-[85px] xl:pt-9 xl:pb-9">
@@ -38,29 +39,29 @@ else: ?>
         <div class="">
             <h4 class="text-[#ED701F] text-20 leading-33  xl:text-20 xl:leading-33 lg:text-15 lg:leading-25 md:text-21 md:leading-28 font-bold font-satoshi xl:pb-4 lg:pb-[37px] md:pb-[40px] pb-4">Direct de juiste afdeling bereiken</h4>
             <div class="xl:space-y-3 lg:space-y-2 md:space-y-2 space-y-2">
-                <div class="flex flex-col lg:flex-row w-full">
+                <div class="flex flex-col lg:flex-row">
                     <p class="text-[#ED701F] font-bold font-nunito xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-15 md:leading-25 text-16 leading-25 xl:w-[285px] lg:w-[254px] w-full lg:pb-0 md:pb-1.5 pb-1">Algemeen</p>
-                    <p class="text-[#000000] font-nunito font-normal xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-16 leading-25"><?php the_field('algemeen', 'option');?></p>
+                    <p class="text-[#000000] font-nunito font-normal xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-16 leading-25"><a href="tel:<?php the_field('algemeen', 'option');?>"><?php the_field('algemeen', 'option');?></a> <?= get_field('algemeen', 'option') && get_field('algemeen_email', 'option') ? "/" : "" ?> <a href="mailto:<?php the_field('algemeen_email', 'option');?>"><?php the_field('algemeen_email', 'option');?></a></p>
                 </div>
                 <div class="flex flex-col lg:flex-row">
                     <p class="text-[#ED701F] font-bold font-nunito xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-15 md:leading-25 text-16 leading-25 xl:w-[285px] lg:w-[254px] w-full lg:pb-0 md:pb-1.5 pb-1">Sales</p>
-                    <p class="text-[#000000] font-nunito font-normal xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-16 leading-25"><?php the_field('sales', 'option');?></p>
+                    <p class="text-[#000000] font-nunito font-normal xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-16 leading-25"><a href="tel:<?php the_field('sales', 'option');?>"><?php the_field('sales', 'option');?></a> <?= get_field('sales', 'option') && get_field('sales_email', 'option') ? "/" : "" ?> <a href="mailto:<?php the_field('sales_email', 'option');?>"><?php the_field('sales_email', 'option');?></a></p>
                 </div>
                 <div class="flex flex-col lg:flex-row">
                     <p class="text-[#ED701F] font-bold font-nunito xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-15 md:leading-25 text-16 leading-25 xl:w-[285px] lg:w-[254px] w-full lg:pb-0 md:pb-1.5 pb-1">Verhuur</p>
-                    <p class="text-[#000000] font-nunito font-normal xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-16 leading-25"><?php the_field('verhuur', 'option');?></p>
+                    <p class="text-[#000000] font-nunito font-normal xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-16 leading-25"><a href="tel:<?php the_field('verhuur', 'option');?>"><?php the_field('verhuur', 'option');?></a> <?= get_field('verhuur', 'option') && get_field('verhuur_email', 'option') ? "/" : "" ?> <a href="mailto:<?php the_field('verhuur_email', 'option');?>"><?php the_field('verhuur_email', 'option');?></a></p>
                 </div>
                 <div class="flex flex-col lg:flex-row">
                     <p class="text-[#ED701F] font-bold font-nunito xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-15 md:leading-25 text-16 leading-25 xl:w-[285px] lg:w-[254px] w-full lg:pb-0 md:pb-1.5 pb-1">WLZ / Verzekerde Zorg</p>
-                    <p class="text-[#000000] font-nunito font-normal xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-16 leading-25"><?php the_field('wlz_verzekerde_zorg', 'option');?></p>
+                    <p class="text-[#000000] font-nunito font-normal xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-16 leading-25"><a href="tel:<?php the_field('wlz_verzekerde_zorg', 'option');?>"><?php the_field('wlz_verzekerde_zorg', 'option');?></a> <?= get_field('wlz_verzekerde_zorg', 'option') && get_field('wlz_verzekerde_zorg_email', 'option') ? "/" : "" ?> <a href="mailto:<?php the_field('wlz_verzekerde_zorg_email', 'option');?>"><?php the_field('wlz_verzekerde_zorg_email', 'option');?></a></p>
                 </div>
                 <div class="flex flex-col lg:flex-row">
                     <p class="text-[#ED701F] font-bold font-nunito xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-15 md:leading-25 text-16 leading-25 xl:w-[285px] lg:w-[254px] w-full lg:pb-0 md:pb-1.5 pb-1">Service, Reparatie en onderhoud</p>
-                    <p class="text-[#000000] font-nunito font-normal xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-16 leading-25"><?php the_field('service_reparatie_onderhoud', 'option');?></p>
+                    <p class="text-[#000000] font-nunito font-normal xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-16 leading-25"><a href="tel:<?php the_field('service_reparatie_onderhoud', 'option');?>"><?php the_field('service_reparatie_onderhoud', 'option');?></a> <?= get_field('service_reparatie_onderhoud', 'option') && get_field('service_reparatie_onderhoud_email', 'option') ? "/" : "" ?> <a href="mailto:<?php the_field('service_reparatie_onderhoud_email', 'option');?>"><?php the_field('service_reparatie_onderhoud_email', 'option');?></a></p>
                 </div>
                 <div class="flex flex-col lg:flex-row">
                     <p class="text-[#ED701F] font-bold font-nunito xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-15 md:leading-25 text-16 leading-25 xl:w-[285px] lg:w-[254px] w-full lg:pb-0 md:pb-1.5 pb-1">Planning</p>
-                    <p class="text-[#000000] font-nunito font-normal xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-16 leading-25"><?php the_field('planning', 'option');?></p>
+                    <p class="text-[#000000] font-nunito font-normal xl:text-16 xl:leading-25 lg:text-15 lg:leading-25 md:text-14 md:leading-24 text-16 leading-25"><a href="tel:<?php the_field('planning', 'option');?>"><?php the_field('planning', 'option');?></a> <?= get_field('planning', 'option') && get_field('planning_email', 'option') ? "/" : "" ?> <a href="mailto:<?php the_field('planning_email', 'option');?>"><?php the_field('planning_email', 'option');?></a></p>
                 </div>
             </div>
         </div>

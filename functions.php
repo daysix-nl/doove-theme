@@ -1111,3 +1111,26 @@ add_filter('manage_pages_columns', 'verwijder_auteur_en_reacties_kolommen');
 
 
 
+
+
+function rewrite_image_urls_js() {
+    $current_domain = $_SERVER['HTTP_HOST'];
+    if ( 'doove-care-groep.local' === $current_domain ) {
+        echo "
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const local_domain = 'http://doove-care-groep.local/';
+            const production_domain = 'https://doove.attentionseekers.studio/';
+            document.querySelectorAll('img').forEach(function(img) {
+                const src = img.getAttribute('src');
+                if (src) {
+                    img.setAttribute('src', src.replace(local_domain, production_domain));
+                }
+            });
+        });
+        </script>
+        ";
+    }
+}
+
+add_action('wp_head', 'rewrite_image_urls_js');

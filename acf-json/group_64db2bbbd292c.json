@@ -84,7 +84,7 @@
         },
         {
             "key": "field_64db2c8174175",
-            "label": "Algemeen",
+            "label": "Algemeen - Telefoonnummer",
             "name": "algemeen",
             "aria-label": "",
             "type": "text",
@@ -96,15 +96,34 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "0182 624 900 \/ info@doove.nl",
+            "default_value": "0182 624 900",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
             "append": ""
         },
         {
+            "key": "field_65020578102b6",
+            "label": "Algemeen - Email",
+            "name": "algemeen_email",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "info@doove.nl",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_64db2c9074176",
-            "label": "Sales",
+            "label": "Sales - Telefoonnummer",
             "name": "sales",
             "aria-label": "",
             "type": "text",
@@ -116,7 +135,27 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "0182 624 999 \/ sales@doove.nl",
+            "default_value": "0182 624 999",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6502059b102b7",
+            "label": "Sales - Email",
+            "name": "sales_email",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "sales@doove.nl",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -124,7 +163,7 @@
         },
         {
             "key": "field_64db2c9a74177",
-            "label": "Verhuur",
+            "label": "Verhuur - Telefoonnummer",
             "name": "verhuur",
             "aria-label": "",
             "type": "text",
@@ -136,7 +175,27 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "0182 624 930 \/ verhuur@doove.nl",
+            "default_value": "0182 624 930",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6502061f102b8",
+            "label": "Verhuur - Email",
+            "name": "verhuur_email",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "verhuur@doove.nl",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -144,7 +203,7 @@
         },
         {
             "key": "field_64db2ca874178",
-            "label": "WLZ \/ Verzekerde Zorg",
+            "label": "WLZ \/ Verzekerde Zorg - Telefoonnummer",
             "name": "wlz_verzekerde_zorg",
             "aria-label": "",
             "type": "text",
@@ -156,7 +215,27 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "0182 624 970 \/ verzekerdezorg@doove.nl",
+            "default_value": "0182 624 970",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65020661102b9",
+            "label": "WLZ \/ Verzekerde Zorg - Email",
+            "name": "wlz_verzekerde_zorg_email",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "verzekerdezorg@doove.nl",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -164,7 +243,7 @@
         },
         {
             "key": "field_64db2cb374179",
-            "label": "Service, Reparatie en onderhoud",
+            "label": "Service, Reparatie en onderhoud - Telefoonnummer",
             "name": "service_reparatie_onderhoud",
             "aria-label": "",
             "type": "text",
@@ -176,7 +255,27 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "0182 624 990 \/ service@doove.nl",
+            "default_value": "0182 624 990",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6502069e102ba",
+            "label": "Service, Reparatie en onderhoud - Email",
+            "name": "service_reparatie_onderhoud_email",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "service@doove.nl",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -184,7 +283,7 @@
         },
         {
             "key": "field_64db2cc37417a",
-            "label": "Planning",
+            "label": "Planning - Telefoonnummer",
             "name": "planning",
             "aria-label": "",
             "type": "text",
@@ -196,7 +295,27 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "0182 624 9995 \/ planning@doove.nl",
+            "default_value": "0182 624 9995",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_650206cd102bb",
+            "label": "Planning - Email",
+            "name": "planning_email",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "planning@doove.nl",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -361,5 +480,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1692087172
+    "modified": 1694632999
 }

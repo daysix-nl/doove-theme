@@ -77,7 +77,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "",
+                    "return_format": "url",
                     "parent_repeater": "field_64d3a4666dffa"
                 },
                 {
@@ -129,5 +129,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1691591937
+    "modified": 1694630243
 }

@@ -708,6 +708,9 @@ video {
 .mt-\[65px\] {
   margin-top: 65px;
 }
+.mt-5 {
+  margin-top: 50px;
+}
 .mb-\[22px\] {
   margin-bottom: 22px;
 }
@@ -732,11 +735,11 @@ video {
 .mb-\[35px\] {
   margin-bottom: 35px;
 }
-.mt-5 {
-  margin-top: 50px;
-}
 .block {
   display: block;
+}
+.inline {
+  display: inline;
 }
 .flex {
   display: flex;
