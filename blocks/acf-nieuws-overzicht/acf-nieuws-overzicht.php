@@ -30,20 +30,22 @@ else: ?>
                     </a>
                 <?php endwhile; wp_reset_query(); ?>  
                 <!-- make button here -->
-                <div class="col-span-2 md:col-span-1 flex items-center justify-center">
-                        <div class="pagination-wordpress">
-                            <?php 
-                                $big = 999999999; 
-                                echo paginate_links( array(
-                                    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-                                    'format' => '?paged=%#%',
-                                    'current' => max( 1, get_query_var('paged') ),
-                                    'total' => $loop->max_num_pages
-                                ) );
-                            ?>
-                        </div>
-                </div>
             </div>
+        </div>
+        <div class="container flex">
+          
+            <div class="pagination-wordpress mx-auto">
+                <?php 
+                    $big = 999999999; 
+                    echo paginate_links( array(
+                        'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                        'format' => '?paged=%#%',
+                        'current' => max( 1, get_query_var('paged') ),
+                        'total' => $loop->max_num_pages
+                    ) );
+                ?>
+            </div>
+
         </div>
     </section>
 <?php endif; ?>
