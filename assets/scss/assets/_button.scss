@@ -41,15 +41,15 @@ header {
 }
 
 .pagination-wordpress {
+  span {
+    color: #ed701f;
+    font-weight: 500;
+  }
   a {
     color: rgb(51, 46, 42);
     font-size: 16px;
     font-weight: 400;
     font-family: nunito sans;
-    span {
-      color: #ed701f;
-      font-weight: 500;
-    }
 
     &.prev {
       margin-right: 15px;
