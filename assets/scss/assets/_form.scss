@@ -532,6 +532,16 @@ body .wpc-filters-main-wrap li.wpc-term-item {
         align-items: center !important;
         border: 1px solid #ed711f !important;
         color: #ed711f !important;
+
+        &:after {
+            content: "<svg width=" 18.04" height=" 16.159" viewBox=" 0 0 18.04 16.159"><g id=" Group_376" data-name=" Group 376" transform=" translate(-1172.5 -2031.195)"><g id=" Group_375" data-name=" Group 375" transform=" matrix(0.719, 0.695, -0.695, 0.719, 1182.466, 2032.661)"><path id=" Path_1" data-name=" Path 1" d=" M0, 0, 9.224.345V9.552" transform=" translate(0 0)" fill=" none" stroke=" #ed701f" stroke-linecap=" round" stroke-width=" 2" /></g><line id=" Line_116" data-name=" Line 116" x2=" 14.786" transform=" translate(1173.5 2039.328)" fill=" none" stroke=" #ed701f" stroke-linecap=" round" stroke-width=" 2" /></g></svg>";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #ed711f;
+        }
     }
 
     input.gform_previous_button {
