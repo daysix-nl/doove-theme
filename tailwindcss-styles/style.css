@@ -612,6 +612,9 @@ video {
 .right-\[0px\] {
   right: 0px;
 }
+.right-\[unset\] {
+  right: unset;
+}
 .z-10 {
   z-index: 10;
 }
