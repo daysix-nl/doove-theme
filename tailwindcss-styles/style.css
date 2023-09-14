@@ -606,6 +606,12 @@ video {
 .top-\[92px\] {
   top: 92px;
 }
+.left-\[0px\] {
+  left: 0px;
+}
+.right-\[0px\] {
+  right: 0px;
+}
 .z-10 {
   z-index: 10;
 }
@@ -1745,6 +1751,14 @@ video {
 
   .md\:top-\[65px\] {
     top: 65px;
+  }
+
+  .md\:left-\[-40px\] {
+    left: -40px;
+  }
+
+  .md\:right-\[-40px\] {
+    right: -40px;
   }
 
   .md\:col-span-1 {
