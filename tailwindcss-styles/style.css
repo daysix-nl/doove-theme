@@ -597,6 +597,12 @@ video {
 .top-\[82px\] {
   top: 82px;
 }
+.top-10 {
+  top: 100px;
+}
+.top-\[93\.5px\] {
+  top: 93.5px;
+}
 .z-10 {
   z-index: 10;
 }
@@ -3495,6 +3501,10 @@ video {
 
   .xl\:top-3 {
     top: 30px;
+  }
+
+  .xl\:top-\[93\.5px\] {
+    top: 93.5px;
   }
 
   .xl\:mx-6 {
