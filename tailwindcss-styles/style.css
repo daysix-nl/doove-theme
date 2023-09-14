@@ -2494,6 +2494,10 @@ video {
     padding-top: 72px;
   }
 
+  .md\:pl-4 {
+    padding-left: 40px;
+  }
+
   .md\:text-12 {
     font-size: 12px;
   }
