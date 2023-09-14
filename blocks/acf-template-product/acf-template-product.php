@@ -183,7 +183,7 @@ else: ?>
         </div>
      </section>
     
-     <section class="xl:mb-[190px] lg:mb-[100px] md:mb-[55px] mb-[80px]">
+     <section class="">
         <div class="container">
             <h3 class="text-[#ED701F] font-bold font-satoshi xl:text-25 xl:leading-33 lg:text-22 lg:leading-29 md:text-18 md:leading-25 text-25 leading-33 xl:mb-[37px] lg:mb-[33px] md:mb-[27px] mb-[35px]">Gerelateerde producten</h3>
         </div>
