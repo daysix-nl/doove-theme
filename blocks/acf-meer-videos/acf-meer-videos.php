@@ -3,7 +3,7 @@ if (isset($block['data']['preview_image_help'])): /* rendering in inserter previ
     echo '<img src="' . $block['data']['preview_image_help'] . '" style="width:100%; height:auto;">';
 else: ?>
    <!-- MEER VIDEO'S -->
-    <section class="bg-<?php the_field('achtergrond_kleur');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
+    <section class="bg-<?php the_field('achtergrond_kleur');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> relative mySwiper">
         <div class="container ">
             <div class="max-w-unset md:max-w-[529px] lg:max-w-[567px] xl:max-w-[680px]">
                 <h2 class="text-25 leading-30 md:text-15 md:leading-14 lg:text-21 lg:leading-25 xl:text-25 xl:leading-30 font-satoshi text-black font-semibold pb-4 md:pb-[25px] lg:pb-[25px] xl:pb-3"><?php the_field('titel');?></h2>
