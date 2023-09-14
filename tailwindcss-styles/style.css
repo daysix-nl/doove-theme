@@ -1930,6 +1930,10 @@ video {
     margin-bottom: 40px;
   }
 
+  .md\:mb-\[60px\] {
+    margin-bottom: 60px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2758,6 +2762,10 @@ video {
 
   .lg\:mb-\[60px\] {
     margin-bottom: 60px;
+  }
+
+  .lg\:mb-\[80px\] {
+    margin-bottom: 80px;
   }
 
   .lg\:line-clamp-2 {
@@ -3660,6 +3668,10 @@ video {
 
   .xl\:mb-\[80px\] {
     margin-bottom: 80px;
+  }
+
+  .xl\:mb-\[100px\] {
+    margin-bottom: 100px;
   }
 
   .xl\:h-4 {
