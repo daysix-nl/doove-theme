@@ -97,10 +97,10 @@
 
                 </button>
             </div>
-            <div class="form-titel xl:pl-[65px]">
+            <div class="form-titel pl-4 md:pl-[65px]">
                 <h2 class="pt-2 text-22 leading-33 md:text-21 md:leading-28 lg:text-22 lg:leading-29 xl:text-25 xl:leading-33 font-satoshi text-oranje font-semibold">Een afspraak maken</h2>
             </div>
-            <div class="form-gravity py-4 xl:py-5 pl-2 md:pl-4 xl:pl-[65px]">
+            <div class="form-gravity py-4 xl:py-5 pl-4 md:pl-[65px]">
                 <div class="w-[255px] md:w-[354px] xl:w-[400px] contact-form">
 				    <?php echo do_shortcode('[gravityform id="4" title="false" ajax="true"] '); ?>
                 </div>
@@ -126,10 +126,10 @@
 
                 </button>
             </div>
-            <div class="form-titel xl:pl-[65px]">
+            <div class="form-titel pl-4 md:pl-[65px]">
                 <h2 class="pt-2 text-22 leading-33 md:text-21 md:leading-28 lg:text-22 lg:leading-29 xl:text-25 xl:leading-33 font-satoshi text-oranje font-semibold">Een offerte aanvragen</h2>
             </div>
-            <div class="form-gravity py-4 xl:py-5 pl-2 md:pl-4 xl:pl-[65px]">
+            <div class="form-gravity py-4 xl:py-5 pl-4 md:pl-[65px]">
                 <div class="w-[255px] md:w-[354px] xl:w-[400px] contact-form">
 				    <?php echo do_shortcode('[gravityform id="5" title="false" ajax="true"] '); ?>
                 </div>

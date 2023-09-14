@@ -1450,6 +1450,9 @@ video {
 .pt-\[unset\] {
   padding-top: unset;
 }
+.pl-4 {
+  padding-left: 40px;
+}
 .text-left {
   text-align: left;
 }
@@ -2496,6 +2499,10 @@ video {
 
   .md\:pl-4 {
     padding-left: 40px;
+  }
+
+  .md\:pl-\[65px\] {
+    padding-left: 65px;
   }
 
   .md\:text-12 {
