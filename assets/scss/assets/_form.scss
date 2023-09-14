@@ -530,11 +530,9 @@ body .wpc-filters-main-wrap li.wpc-term-item {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-        border: 1px solid #ed711f52 !important;
-        color: #ed711f52 !important;
+        border: 1px solid #ed711f !important;
+        color: #ed711f !important;
     }
-
-
 
     input.gform_previous_button {
         height: 47px !important;
@@ -542,8 +540,16 @@ body .wpc-filters-main-wrap li.wpc-term-item {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-        border: 1px solid #ED701F !important;
-        color: #ed711f !important;
+        border: 1px solid #ED701F52 !important;
+        color: #ed711f52 !important;
     }
 
+}
+
+#hulpmiddelentest .gform_wrapper.gravity-theme .gform_footer,
+#hulpmiddelentest .gform_wrapper.gravity-theme .gform_page_footer {
+    margin: 6px 0 0;
+    padding: 16px 0;
+    width: 100%;
+    display: flex;
 }
