@@ -526,24 +526,24 @@ body .wpc-filters-main-wrap li.wpc-term-item {
 .gform_page_footer {
     input.gform_next_button {
         height: 47px !important;
-        width: 117px !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        border: 1px solid #ED701F !important;
-        color: #ed711f !important;
-    }
-
-
-
-    input.gform_previous_button {
-        height: 47px !important;
         width: 166px !important;
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
         border: 1px solid #ed711f52 !important;
         color: #ed711f52 !important;
+    }
+
+
+
+    input.gform_previous_button {
+        height: 47px !important;
+        width: 117px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border: 1px solid #ED701F !important;
+        color: #ed711f !important;
     }
 
 }
