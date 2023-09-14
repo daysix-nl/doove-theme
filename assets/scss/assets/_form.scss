@@ -555,3 +555,8 @@ body .wpc-filters-main-wrap li.wpc-term-item {
     display: flex;
     position: relative !important
 }
+
+.gform_wrapper.gravity-theme .gform_page_footer input.button:disabled {
+    opacity: 0 !important;
+    display: none !important;
+}
