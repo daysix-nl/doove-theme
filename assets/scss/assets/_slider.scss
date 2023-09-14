@@ -13,9 +13,9 @@
 
 .mySwiper {
   .swiper-button-next {
-    bottom: 0;
-    right: 30px;
-    top: unset;
+    bottom: unset;
+    right: -30px;
+    top: 40%;
     margin-bottom: 0;
     margin-right: 0;
     width: 30px;
@@ -28,10 +28,10 @@
   }
 
   .swiper-button-prev {
-    bottom: 0;
-    left: unset;
-    right: 60px;
-    top: unset;
+    bottom: unset;
+    left: -30px;
+    right: unset;
+    top: 40%;
     margin-bottom: 0;
     margin-left: 0;
     width: 30px;
