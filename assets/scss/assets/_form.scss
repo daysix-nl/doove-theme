@@ -525,24 +525,25 @@ body .wpc-filters-main-wrap li.wpc-term-item {
 
 .gform_page_footer {
     input.gform_next_button {
-        font-size: 0px !important;
+        height: 47px !important;
+        width: 117px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border: 1px solid #ED701F !important;
+        color: #ed711f !important;
     }
 
-    input.gform_next_button {
-        content: '<svg xmlns="http://www.w3.org/2000/svg" width="117" height="47" viewBox="0 0 117 47"><g id="button_test" data-name="button test" opacity="0.32"><g id="Rectangle_95" data-name="Rectangle 95" fill="none" stroke="#ed701f" stroke-width="1"><rect width="117" height="47" stroke="none" /><rect x="0.5" y="0.5" width="116" height="46" fill="none" /></g></g><text id="Vorige" transform="translate(57 31)" fill="#ed701f" font-size="20" font-family="Helvetica" opacity="0.318"><tspan x="-28.359" y="0">Vorige</tspan></text></svg>' !important;
-        display: block !important;
-        width: 117px !important;
-        height: 47px !important;
-    }
+
 
     input.gform_previous_button {
-        font-size: 0px !important;
+        height: 47px !important;
+        width: 166px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border: 1px solid #ed711f52 !important;
+        color: #ed711f52 !important;
     }
 
-    input.gform_previous_button {
-        content: '<svg xmlns="http://www.w3.org/2000/svg" width="117" height="47" viewBox="0 0 117 47"><g id="button_test" data-name="button test" opacity="0.32"><g id="Rectangle_95" data-name="Rectangle 95" fill="none" stroke="#ed701f" stroke-width="1"><rect width="117" height="47" stroke="none" /><rect x="0.5" y="0.5" width="116" height="46" fill="none" /></g></g><text id="Vorige" transform="translate(57 31)" fill="#ed701f" font-size="20" font-family="Helvetica" opacity="0.318"><tspan x="-28.359" y="0">Vorige</tspan></text></svg>' !important;
-        display: block !important;
-        width: 117px !important;
-        height: 47px !important;
-    }
 }
