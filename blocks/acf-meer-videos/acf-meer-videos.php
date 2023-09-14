@@ -33,8 +33,8 @@ else: ?>
                     ?>
                 </div>
             </div>
-            <div class="swiper-button-next top-[92px] md:top-[65px] lg:top-[102px] xl:top-[117px] right-[0px] md:right-[-40px] left-[unset]"></div>
-            <div class="swiper-button-prev top-[92px] md:top-[65px] lg:top-[102px] xl:top-[117px] left-[0px] md:left-[-40px] right-[unset]"></div>
+            <div class="swiper-button-next top-[92px] md:top-[65px] lg:top-[102px] xl:top-[117px] right-[-8px] md:right-[-40px] left-[unset]"></div>
+            <div class="swiper-button-prev top-[92px] md:top-[65px] lg:top-[102px] xl:top-[117px] left-[-8px] md:left-[-40px] right-[unset]"></div>
         </div>
 
     </section>
