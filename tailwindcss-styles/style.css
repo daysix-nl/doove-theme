@@ -776,6 +776,9 @@ video {
 .mt-\[82px\] {
   margin-top: 82px;
 }
+.mb-\[40px\] {
+  margin-bottom: 40px;
+}
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1923,6 +1926,10 @@ video {
     margin-top: unset;
   }
 
+  .md\:mb-\[40px\] {
+    margin-bottom: 40px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2747,6 +2754,10 @@ video {
 
   .lg\:mt-\[unset\] {
     margin-top: unset;
+  }
+
+  .lg\:mb-\[60px\] {
+    margin-bottom: 60px;
   }
 
   .lg\:line-clamp-2 {
@@ -3645,6 +3656,10 @@ video {
 
   .xl\:mt-\[48px\] {
     margin-top: 48px;
+  }
+
+  .xl\:mb-\[80px\] {
+    margin-bottom: 80px;
   }
 
   .xl\:h-4 {
