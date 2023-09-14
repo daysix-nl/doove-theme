@@ -33,8 +33,8 @@ else: ?>
                     ?>
                 </div>
             </div>
-            <div class="swiper-button-next xl:top-[93.5px]"></div>
-            <div class="swiper-button-prev xl:top-[93.5px]"></div>
+            <div class="swiper-button-next top-[92px] md:top-[65px] lg:top-[102px] xl:top-[117px]"></div>
+            <div class="swiper-button-prev top-[92px] md:top-[65px] lg:top-[102px] xl:top-[117px]"></div>
         </div>
 
     </section>

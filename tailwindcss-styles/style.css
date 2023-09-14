@@ -603,6 +603,9 @@ video {
 .top-\[93\.5px\] {
   top: 93.5px;
 }
+.top-\[92px\] {
+  top: 92px;
+}
 .z-10 {
   z-index: 10;
 }
@@ -1740,6 +1743,10 @@ video {
     top: 71px;
   }
 
+  .md\:top-\[65px\] {
+    top: 65px;
+  }
+
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -2586,6 +2593,10 @@ video {
 
   .lg\:top-\[25px\] {
     top: 25px;
+  }
+
+  .lg\:top-\[102px\] {
+    top: 102px;
   }
 
   .lg\:order-1 {
@@ -3505,6 +3516,10 @@ video {
 
   .xl\:top-\[93\.5px\] {
     top: 93.5px;
+  }
+
+  .xl\:top-\[117px\] {
+    top: 117px;
   }
 
   .xl\:mx-6 {
