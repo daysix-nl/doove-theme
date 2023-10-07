@@ -24,7 +24,7 @@
     <div class="overflow-hidden flex h-[82px] md:h-[71px] lg:h-[68px] items-center relative">
       <!-- DESKTOP MENU -->
       <div class="hidden lg:flex">
-        <button data-target="zorghulpmiddelen" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-bold text-[#726A63] ml-4 flex items-center hover:text-orange duration-300 button-navbar"><?php the_field('titel', 'option');?> <span class="lg:h-[4.689px] xl:h-[5px] ml-2"><?php include get_template_directory() . '/img/icons/arrow-down.php'; ?></span></button>
+        <div data-target="zorghulpmiddelen" class="lg:text-13 lg:leading-18 xl:text-16 xl:leading-22 font-nunito font-bold text-[#726A63] ml-4 flex items-center hover:text-orange duration-300 button-navbar"><a href="/zorghulpmiddelen"><?php the_field('titel', 'option');?></a> <span class="lg:h-[4.689px] xl:h-[5px] ml-2"><?php include get_template_directory() . '/img/icons/arrow-down.php'; ?></span></div>
         <!-- HOOFDMENU DESKTOP -->
         <?php
           if( have_rows('primaire_navbar_repeater', 'option') ):

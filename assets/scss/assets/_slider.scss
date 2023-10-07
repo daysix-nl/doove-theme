@@ -78,3 +78,18 @@
     }
   }
 }
+
+
+.step {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.btn-label input[type="radio"]:checked+.btn {
+  background-color: #ED701F;
+  color: #FFF;
+
+}

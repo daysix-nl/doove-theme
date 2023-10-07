@@ -83,7 +83,7 @@
 
 
 
-<div id="popup-modal" class="overlay-popup absolute">
+<div id="popup-modal" class="overlay-popup fixed">
     <div class="flex justify-center items-center">
         <div class="w-[361px] md:w-[623px] lg:w-[524px] xl:w-[569px] bg-white min-h-[580px] md:min-h-[537px] xl:min-h-[569px] overflow-scroll">
             <div class="form-header flex justify-end w-full">

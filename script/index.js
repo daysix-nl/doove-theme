@@ -367,3 +367,118 @@ try {
     });
   }
 } catch (error) {}
+
+try {
+  document.addEventListener("DOMContentLoaded", (event) => {
+    let currentStep = 1;
+    const steps = document.querySelectorAll(".step");
+
+    function setAnswerFromUrl(stepId) {
+      const url = new URL(window.location.href);
+      const answer = url.searchParams.get(`answer${stepId}`);
+
+      if (answer) {
+        const radioBtn = document.querySelector(
+          `.step[data-step-id='${stepId}'] input[type='radio'][value='${answer}']`
+        );
+        if (radioBtn) {
+          radioBtn.checked = true;
+        }
+      }
+    }
+
+    function saveAnswerToUrl(stepId) {
+      const selectedRadio = document.querySelector(
+        `.step[data-step-id='${stepId}'] input[type='radio']:checked`
+      );
+
+      if (selectedRadio) {
+        const answer = selectedRadio.value;
+        const url = new URL(window.location.href);
+        url.searchParams.set(`answer${stepId}`, answer);
+        window.history.pushState({}, "", url);
+      }
+    }
+
+    function isAnswerSelected(stepId) {
+      return (
+        document.querySelector(
+          `.step[data-step-id='${stepId}'] input[type='radio']:checked`
+        ) !== null
+      );
+    }
+
+    function updateNextButtonState(stepId) {
+      const nextButton = document.querySelector(
+        `.step[data-step-id='${stepId}'] .navigate[data-direction='1']`
+      );
+      if (nextButton) {
+        nextButton.disabled = !isAnswerSelected(stepId);
+      }
+    }
+
+    document
+      .querySelectorAll(".step input[type='radio']")
+      .forEach((radioBtn) => {
+        radioBtn.addEventListener("change", (event) => {
+          const stepId = event.currentTarget
+            .closest(".step")
+            .getAttribute("data-step-id");
+          saveAnswerToUrl(stepId);
+          updateNextButtonState(stepId);
+        });
+      });
+
+    function navigate(direction) {
+      saveAnswerToUrl(currentStep);
+
+      document
+        .querySelector(`.step[data-step-id='${currentStep}']`)
+        .classList.remove("active");
+      currentStep += direction;
+      document
+        .querySelector(`.step[data-step-id='${currentStep}']`)
+        .classList.add("active");
+
+      setAnswerFromUrl(currentStep);
+      updateNextButtonState(currentStep);
+    }
+
+    document.querySelectorAll(".navigate").forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        navigate(parseInt(event.currentTarget.getAttribute("data-direction")));
+
+        if (currentStep === steps.length) {
+          const urlParams = new URLSearchParams(window.location.search);
+          const answer1 = urlParams.get("answer1");
+          const answer2 = urlParams.get("answer2");
+          const answer3 = urlParams.get("answer3");
+          const answer4 = urlParams.get("answer4");
+          const answer5 = urlParams.get("answer5");
+          const answer6 = urlParams.get("answer6");
+          const adviceText = document.getElementById("advice-text");
+
+          if (
+            answer1 === "Ja" ||
+            answer2 === "Ja" ||
+            answer3 === "Ja" ||
+            answer4 === "Ja" ||
+            answer5 === "Ja" ||
+            answer6 === "Ja"
+          ) {
+            adviceText.innerHTML =
+              "Gelukkig maar want 5 van de 6 bovenstaande punten zijn wettelijk verplicht of vastgelegd in specifieke richtlijnen.";
+          } else {
+            adviceText.innerHTML =
+              "Wij kunnen u helpen met het beheer van uw zorghulpmiddelen. Met Doove Facility Support lost u alle bovenstaande problemen op.";
+          }
+        }
+      });
+    });
+
+    navigate(0);
+  });
+} catch (error) {
+  console.error("An error occurred:", error);
+}

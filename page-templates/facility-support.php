@@ -4,7 +4,39 @@
  */
 
 
- get_header(); ?>
+ get_header(); 
+
+ $steps = [
+    [
+        "id" => 1,
+        "text" => "Wij weten precies hoeveel zorghulpmiddelen er in onze instelling aanwezig zijn en waar ze zich bevinden.",
+
+
+    ],
+    [
+        "id" => 2,
+        "text" => "Alle zorghulpmiddelen werken naar behoren en zijn direct inzetbaar voor veilige patiëntenzorg."
+    ],
+    [
+        "id" => 3,
+        "text" => "Alle zorghulpmiddelen zijn gekeurd volgens de laatste normen en wetgeving."
+    ],
+    [
+        "id" => 4,
+        "text" => "Er is bij iedereen bekend wie gebeld/gemaild moet worden in geval van reparatie."
+    ],
+    [
+        "id" => 5,
+        "text" => "Wij weten precies wanneer we zorghulpmiddelen moeten vervangen en reserveren op tijd budget hiervoor."
+    ],
+    [
+        "id" => 6,
+        "text" => "Alle informatie rondom mijn zorghulpmiddelen en het beheer hiervan is digitaal en mobiel toegankelijk via een portal en App."
+    ]
+];
+
+
+ ?>
  
 <main>
     <!-- HEADER 2 -->
@@ -92,7 +124,28 @@
                 <p class="text-18 leading-30 md:text-14 md:leading-24 lg:text-15 lg:leading-25 xl:text-18 xl:leading-30 font-nunito text-black font-normal md:max-w-[579px] lg:max-w-[282px] xl:max-w-[339px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Sed diam nonumy eirmod tempor invidunt ut labore.</p>
             </div>
             <div id="form-list" class="lg:w-[626px] xl:w-[709px] mt-4 md:mt-[35px] lg:mt-[unset]">
-                <?php echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax=“true”]' ); ?>
+                <?php foreach ($steps as $step) { ?>
+                    <?php foreach ($steps as $step) { ?>
+                        <div>
+                            <span><?= $step['id']; ?>/<?= count($steps); ?></span>
+                            <span></span>
+                        </div>
+                    <?php } ?>
+                    <p id="advice-text"><?= $step['text']; ?></p>
+                    <div>
+                        <button>Ja</button>
+                        <button>Eh..</button>
+                        <button>Nee</button>
+                    </div>
+                    <div>
+                        <?php if ($step['id'] > 1) { ?>
+                            <button>Vorige</button>
+                        <?php } ?>
+                        <?php if ($step['id'] < count($steps)) { ?>
+                            <button>Volgende</button>
+                        <?php } ?>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </section>
