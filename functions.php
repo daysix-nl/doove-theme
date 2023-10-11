@@ -965,6 +965,8 @@ function add_custom_admin_bar_styles() {
             #dashboard_site_health { display: none !important; }
             #rg_forms_dashboard { display: none !important; }
             #menu-posts { display: none !important; }
+	    #rank_math_dashboard_widget { display: none !important; }
+     		#wp_mail_smtp_reports_widget_lite { display: none !important; }
 	    #toplevel_page_litespeed { display: none !important; }
      
             /* Voeg hier meer CSS-styling toe indien nodig */
