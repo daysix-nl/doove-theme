@@ -156,7 +156,7 @@
       </div>
     </div>
     <div class="absolute bottom-2 md:bottom-3 left-0 right-0">
-      <a href="<?php the_field('button_link', 'option');?>">
+      <a href="<?php the_field('button_link', 'option');?>" target="_blank">
       <div class="h-[49px] bg-orange flex justify-center items-center mx-2 md:mx-4 mb-3 md:mb-7"><p class="text-20 leading-22 font-nunito font-bold text-white uppercase"><?php the_field('button_titel', 'option');?></p></div>
           </a>
     </div>
