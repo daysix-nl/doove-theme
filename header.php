@@ -44,7 +44,7 @@
           ?>
       </div>
       <div class="hidden lg:flex ml-4">
-        <a href="<?php the_field('button_link', 'option');?>"><div id="kis" class="uppercase bg-orange rounded-[2px] lg:text-14 lg:leading-17 xl:text-18 xl:leading-22 font-nunito font-bold text-white hover:opacity-[0.7] duration-300 lg:w-[78px] lg:h-[34px] xl:h-[39px] xl:w-[88px] flex items-center justify-center"><?php the_field('button_titel', 'option');?></div></a>
+        <a href="<?php the_field('button_link', 'option');?>" target="_blank"><div id="kis" class="uppercase bg-orange rounded-[2px] lg:text-14 lg:leading-17 xl:text-18 xl:leading-22 font-nunito font-bold text-white hover:opacity-[0.7] duration-300 lg:w-[78px] lg:h-[34px] xl:h-[39px] xl:w-[88px] flex items-center justify-center"><?php the_field('button_titel', 'option');?></div></a>
         <button id="search" class="search-in uppercase bg-[#F4F4F5] rounded-[2px] lg:text-14 lg:leading-17 xl:text-18 xl:leading-22 font-nunito font-bold text-white hover:opacity-[0.7] duration-300 lg:w-[36px] lg:h-[34px] xl:h-[39px] xl:w-[40px] flex items-center justify-center lg:ml-[10px] xl:ml-[15px]"><span class="lg:h-[12.9px] xl:h-[14.5px]"><?php include get_template_directory() . '/img/icons/glass.php'; ?></span></button>
       </div>
       <!-- ZOEKBALK DESKTOP -->
