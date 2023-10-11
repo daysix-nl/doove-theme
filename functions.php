@@ -909,6 +909,7 @@ function customize_dashboard_menu() {
             'toplevel_page_rank-math',
             'toplevel_page_zci_settings',
             'menu-top toplevel_page_edit?post_type=filter-set',
+		'toplevel_page_wp-mail-smtp',
             // Voeg hier andere classes toe van de items die je wilt verbergen op basis van de class.
         );
 
@@ -964,6 +965,8 @@ function add_custom_admin_bar_styles() {
             #dashboard_site_health { display: none !important; }
             #rg_forms_dashboard { display: none !important; }
             #menu-posts { display: none !important; }
+	    #toplevel_page_litespeed { display: none !important; }
+     
             /* Voeg hier meer CSS-styling toe indien nodig */
         ";
 
