@@ -1,0 +1,22 @@
+{
+    "key": "ui_options_page_65352a86c2049",
+    "title": "Pop-up",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Pop-up",
+    "menu_slug": "pop-up",
+    "parent_slug": "none",
+    "advanced_configuration": 0,
+    "icon_url": "",
+    "menu_title": "",
+    "position": "",
+    "redirect": 0,
+    "description": "",
+    "update_button": "Updaten",
+    "updated_message": "Opties bijgewerkt",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1697983125
+}
