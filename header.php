@@ -113,7 +113,7 @@
 </div>
 <div class="overlay-header fixed top-0 left-0 right-0 h-screen w-screen z-30 hidden"></div>
 <!-- OVERLAY MOBILE MENU -->
-<div class="top-[82px] md:top-[71px] h-[calc(100vh-82px)] md:h-[calc(100vh-71px)] bg-white fixed lg:hidden z-40 menumobileoverlay">
+<div class="top-[82px] md:top-[71px] h-[calc(100dvh-82px)] md:h-[calc(100dvh-71px)] bg-white fixed lg:hidden z-40 menumobileoverlay">
   <div class="relative h-full">
     <div class="mx-2 md:mx-4 mt-2 mb-3 md:mt-3 md:mb-[35px]">
       <!-- ZOEKBALK MOBIEL -->
@@ -163,7 +163,7 @@
   </div>
 </div>  
 <!-- OVERLAY MOBILE SUBMENU -->
-<div class="left-0 right-0 top-[82px] md:top-[71px] h-[calc(100vh-82px)] md:h-[calc(100vh-71px)] bg-white fixed z-40 lg:hidden submenumobileoverlay">
+<div class="left-0 right-0 top-[82px] md:top-[71px] h-[calc(100dvh-82px)] md:h-[calc(100dvh-71px)] bg-white fixed z-40 lg:hidden submenumobileoverlay">
   <div class="relative h-full">
     <div class="mx-2 md:mx-4 mt-2 mb-2 md:mt-[25px] md:mb-[25px]">
       <button href="" class="flex items-center">
