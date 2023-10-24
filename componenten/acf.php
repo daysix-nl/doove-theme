@@ -20,6 +20,8 @@
 <div class="padding-bottom-xl"></div>
 <div class="pt-0"></div>
 <div class="pb-0"></div>
+<div class="active"></div>
+<div class="not-active"></div>
 
 <div class="grid items-center h-full">
 <div class="text-center text-editor">

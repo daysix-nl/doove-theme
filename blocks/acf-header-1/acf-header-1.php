@@ -3,7 +3,7 @@ if (isset($block['data']['preview_image_help'])): /* rendering in inserter previ
     echo '<img src="' . $block['data']['preview_image_help'] . '" style="width:100%; height:auto;">';
 else: ?>
 <div class="pop-up <?php the_field('actief', 'option');?>">
-<div class="cookie-popup fixed top-0 bottom-0 left-0 right-0 bg-[#00000033] z-[999]">
+<div class="cookie-popup fixed top-0 bottom-0 left-0 right-0 bg-[#00000033] z-[9]">
     <div class="flex justify-center items-center pt-[100px]">
         <div class="w-full max-w-[350px] md:max-w-[350px] lg:max-w-[393px] xl:max-w-[393px] bg-white max-h-[calc(100dvh-130px)] overflow-scroll rounded-[10px]">
             <div class="form-header flex justify-end w-full aspect-[16/10] relative bg-[#DBDBDB]">
