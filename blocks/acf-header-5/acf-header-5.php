@@ -11,7 +11,7 @@ else: ?>
             </div>
         </div>
     </section>
-    <section class="block md:hidden bg-<?php the_field('achtergrond_kleur');?>">
+    <section class="block md:hidden bg-<?php the_field('achtergrond_kleur');?> pb-4">
         <div class="container pt-3">
             <h1 class="text-25 leading-30 font-satoshi text-<?php the_field('titel_kleur_mobiel');?> font-semibold"><?php the_field('titel');?></h1>
         </div>
