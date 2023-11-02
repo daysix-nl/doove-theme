@@ -13,7 +13,7 @@ else: ?>
                 <iframe class="aspect-video w-full" src="https://www.youtube-nocookie.com/embed/<?php the_field('id_youtube');?>?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
             </div>
         </div>
-        <div class="hidden md:block lg:hidden my-[-40px] <?php the_field('order');?>">
+        <div class="hidden md:block lg:hidden mb-[-40px] pt-4 <?php the_field('order');?>">
             <iframe class="aspect-video w-full" src="https://www.youtube-nocookie.com/embed/<?php the_field('id_youtube');?>?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
         </div>
     </section>
