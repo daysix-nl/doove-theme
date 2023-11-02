@@ -1275,6 +1275,11 @@ video {
   margin-top: calc(45px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(45px * var(--tw-space-y-reverse));
 }
+.space-y-\[40px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(40px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(40px * var(--tw-space-y-reverse));
+}
 .overflow-hidden {
   overflow: hidden;
 }
