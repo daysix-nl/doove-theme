@@ -6,6 +6,7 @@
 <div class="text-white"></div>
 <div class="bg-white"></div>
 <div class="bg-grijs"></div>
+<div class="bg-groen"></div>
 <div class="text-donkergrijs"></div>
 <div class="bg-lichtoranje"></div>
 <div class="padding-top-xs"></div>
@@ -22,6 +23,8 @@
 <div class="pb-0"></div>
 <div class="active"></div>
 <div class="not-active"></div>
+<div class="order-1"></div>
+<div class="order-3"></div>
 
 <div class="grid items-center h-full">
 <div class="text-center text-editor">

@@ -37,7 +37,8 @@
             "choices": {
                 "white": "Wit",
                 "grijs": "Grijs",
-                "lichtoranje": "Oranje"
+                "lichtoranje": "Oranje",
+                "groen": "Groen"
             },
             "default_value": "white",
             "return_format": "value",
@@ -141,5 +142,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1692084914
+    "modified": 1698944390
 }

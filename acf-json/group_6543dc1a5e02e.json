@@ -1,9 +1,9 @@
 {
-    "key": "group_64d12d68d5e6a",
-    "title": "Content blok 3",
+    "key": "group_6543dc1a5e02e",
+    "title": "Content blok 7",
     "fields": [
         {
-            "key": "field_64d12d692df9c",
+            "key": "field_6543dc1a5fc10",
             "label": "Titel",
             "name": "titel",
             "aria-label": "",
@@ -23,7 +23,7 @@
             "new_lines": "br"
         },
         {
-            "key": "field_64d12d962df9d",
+            "key": "field_6543dc1a5fc15",
             "label": "Titel kleur",
             "name": "titel_kleur",
             "aria-label": "",
@@ -50,7 +50,7 @@
             "placeholder": ""
         },
         {
-            "key": "field_64d12dc7bb0fd",
+            "key": "field_6543dc1a5fc19",
             "label": "Tekst",
             "name": "tekst",
             "aria-label": "",
@@ -70,12 +70,12 @@
             "delay": 0
         },
         {
-            "key": "field_64d12f7cb2b15",
-            "label": "ID YouTube video",
-            "name": "id_youtube",
+            "key": "field_6543e2cc792b9",
+            "label": "Afbeelding",
+            "name": "afbeelding",
             "aria-label": "",
-            "type": "text",
-            "instructions": "<b>Uitleg:<\/b> Ga naar www.youtube.com en ga naar de desbetreffende video. Klik vervolgens op de <u>Delen<\/u> button. Je krijgt dan een URL te zien van YouTube met daarachter een unieke code van de video. Voorbeeld: <em>https:\/\/youtube.com\/<b>10PzKOd8aZs<\/b><\/em>. Kopieer deze code en plaats hem in dit veld.",
+            "type": "image",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -83,15 +83,20 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "10PzKOd8aZs",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "preview"
         },
         {
-            "key": "field_6543d688e18cc",
-            "label": "Uitlijning video",
+            "key": "field_6543dc1a5fc25",
+            "label": "Uitlijning afbeelding",
             "name": "order",
             "aria-label": "",
             "type": "select",
@@ -104,8 +109,8 @@
                 "id": ""
             },
             "choices": {
-                "order-1": "Links",
-                "order-3": "Rechts"
+                "imgright": "Rechts",
+                "imgleft": "Links"
             },
             "default_value": "order-3",
             "return_format": "value",
@@ -121,7 +126,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/acf-content-blok-3"
+                "value": "acf\/acf-content-blok-7"
             }
         ]
     ],
@@ -134,5 +139,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698944770
+    "modified": 1698948726
 }

@@ -4,16 +4,16 @@ if (isset($block['data']['preview_image_help'])): /* rendering in inserter previ
 else: ?>
     <!-- CONTENT BLOK 3 -->
     <section class="bg-<?php the_field('achtergrond_kleur');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?>">
-        <div class="container grid grid-cols-1 lg:grid-cols-2 items-center">
-            <div class="col-span-1 grid gap-[25px] md:gap-3 lg:gap-4">
+        <div class="container flex flex-col lg:flex-row items-center justify-between">
+            <div class="col-span-1 grid gap-[25px] md:gap-3 lg:gap-4 order-2">
                 <h2 class="text-22 leading-33 md:text-21 md:leading-28 lg:text-22 lg:leading-29 xl:text-25 xl:leading-33 font-satoshi text-<?php the_field('titel_kleur');?> font-semibold lg:max-w-[439px] xl:max-w-[527px]"><?php the_field('titel');?></h2>
                 <div class="text-18 leading-30 md:text-14 md:leading-24 lg:text-15 lg:leading-25 xl:text-18 xl:leading-30 font-nunito text-black font-normal lg:max-w-[439px] xl:max-w-[527px] text-editor"><?php the_field('tekst');?></div>                
             </div>
-            <div class="col-span-1 block md:hidden lg:block pt-5 md:pt-0">
-                <iframe class="aspect-video w-full lg:pl-2" src="https://www.youtube-nocookie.com/embed/<?php the_field('id_youtube');?>?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
+            <div class="col-span-1 block md:hidden lg:block pt-5 md:pt-0 <?php the_field('order');?> w-full lg:max-w-[545px] xl:max-w-[619px]">
+                <iframe class="aspect-video w-full" src="https://www.youtube-nocookie.com/embed/<?php the_field('id_youtube');?>?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
             </div>
         </div>
-        <div class="hidden md:block lg:hidden mb-[-40px]  <?php the_field('padding_top');?>">
+        <div class="hidden md:block lg:hidden mb-[-40px]  <?php the_field('padding_top');?> <?php the_field('order');?>">
             <iframe class="aspect-video w-full" src="https://www.youtube-nocookie.com/embed/<?php the_field('id_youtube');?>?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
         </div>
     </section>

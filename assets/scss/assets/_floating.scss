@@ -82,3 +82,51 @@
         display: block;
     }
 }
+
+
+
+.imgleft {
+    order: 3 !important;
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 1200px) {
+        order: 3 !important;
+
+        .tekst {
+            margin-left: 126px !important;
+        }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1352px) {
+        order: 3 !important;
+
+        .tekst {
+            margin-left: 109px !important;
+        }
+    }
+}
+
+.imgright {
+    order: 3 !important;
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 1200px) {
+        order: 1 !important;
+
+        .tekst {
+            margin-right: 126px !important;
+            margin-left: auto !important;
+        }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1352px) {
+        order: 1 !important;
+
+        .tekst {
+            margin-right: 109px !important;
+            margin-left: auto !important;
+        }
+    }
+}

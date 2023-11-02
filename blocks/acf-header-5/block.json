@@ -1,0 +1,27 @@
+{
+  "name": "acf-header-5",
+  "title": "Header 5",
+  "description": "Een header met tekstblok, en een vrijstaande afbeelding.",
+  "category": "bibliotheek",
+  "icon": "align-full-width",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-header-5.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/header-5.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}
