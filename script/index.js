@@ -482,3 +482,15 @@ try {
 } catch (error) {
   console.error("An error occurred:", error);
 }
+
+try {
+  const buttonClosePopUp = document.querySelector(".closePopUp");
+  const popUp = document.querySelector(".pop_up");
+
+  buttonClosePopUp.addEventListener("click", () => {
+    let date = new Date();
+    date.setDate(date.getDate() + 7);
+    document.cookie = "popup=yes; expires=" + date.toUTCString() + ";";
+    popUp.classList.add("hidden");
+  });
+} catch (error) {}

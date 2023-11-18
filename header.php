@@ -25,6 +25,42 @@
     <!-- End Google Tag Manager -->
 </head>
 <body <?php body_class( 'page-block doove' ); ?>>
+  <?php if((!isset($_COOKIE["popup"]) || $_COOKIE["popup"] !== "yes") && get_field('actief', 'option')) { ?>
+      <div class="pop_up fixed top-0 left-0 w-screen h-screen flex bg-[#000000]/20 z-[1000] justify-center items-center ">
+          <div class="w-full max-w-[358px] md:max-w-[415px] bg-white m-auto rounded-[11px] overflow-hidden relative">
+              <button class="closePopUp top-2 right-2 absolute z-[100]">
+                <svg id="Group_440" data-name="Group 440" xmlns="http://www.w3.org/2000/svg" width="20.441" height="20.441" viewBox="0 0 20.441 20.441">
+                  <rect id="Rectangle_7" data-name="Rectangle 7" width="25.521" height="3.385" rx="1.693" transform="translate(2.395 0) rotate(45)" fill="#fff"/>
+                  <rect id="Rectangle_7-2" data-name="Rectangle 7" width="25.521" height="3.385" rx="1.693" transform="translate(0 18.047) rotate(-45)" fill="#fff"/>
+                </svg>
+
+              </button>
+              <?php
+              $image = get_field('popup_afbeelding', 'option');
+              $image_url = isset($image['url']) ? esc_url($image['url']) : '';
+              $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
+              ?>
+              <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="w-full object-cover object-center h-[210px]">
+              <div class="pt-3 pb-4 px-4">
+                <?php if (get_field('popup_titel', 'option')): ?>   
+                  <h2 class="text-25 leading-25 font-satoshi text-[#332E2A] font-black pb-[25px] max-w-[224px] md:max-w-[333px] "><?php the_field('popup_titel', 'option');?></h2>
+                <?php endif; ?>
+                <?php if (get_field('popup_tekst', 'option')): ?>   
+                  <p class="text-18 leading-18 font-nunito text-black font-normal pb-3 max-w-[269px] md:max-w-[333px]"><?php the_field('popup_tekst', 'option');?></p>
+                <?php endif; ?>
+                <?php
+                  $link = get_field('popup_link', 'option');
+                  $link_url = isset($link['url']) ? esc_url($link['url']) : '';
+                  $link_text = isset($link['title']) ? esc_html($link['title']) : '';
+                  $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
+                ?>
+                <?php if (get_field('popup_link', 'option')): ?>   
+                  <a href="<?php echo $link_url; ?>" class="bg-[#FF7922] flex justify-center items-center w-full h-[49px] uppercase text-white text-14 leading-23 font-satoshi font-bold" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
+                <?php endif; ?>
+              </div>
+          </div>
+      </div>
+  <?php } ?>
 <header class="bg-white h-[82px] md:h-[71px] lg:h-[68px] w-full fixed top-0 z-[999] border-b-[1px] border-[#EBEBEB]">
   <div class="flex items-center justify-between h-full mr-2 md:mr-[25px] lg:mr-[15px] xl:mr-2">
     <a href="/" class="ml-2 md:ml-4 w-[231px]"><?php include get_template_directory() . '/img/icons/logo.php'; ?></a>
