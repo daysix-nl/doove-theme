@@ -27,7 +27,7 @@
 <body <?php body_class( 'page-block doove' ); ?>>
   <?php if((!isset($_COOKIE["popup"]) || $_COOKIE["popup"] !== "yes") && get_field('actief', 'option')) { ?>
       <div class="pop_up fixed top-0 left-0 w-screen h-screen flex bg-[#000000]/20 z-[1000] justify-center items-center ">
-          <div class="w-full max-w-[358px] md:max-w-[415px] bg-white m-auto rounded-[11px] overflow-hidden relative">
+          <div class="w-full max-w-[358px] md:max-w-[415px] bg-white m-auto rounded-[11px] overflow-hidden relative pop_up_inner">
               <button class="closePopUp top-2 right-2 absolute z-[100]">
                 <svg id="Group_440" data-name="Group 440" xmlns="http://www.w3.org/2000/svg" width="20.441" height="20.441" viewBox="0 0 20.441 20.441">
                   <rect id="Rectangle_7" data-name="Rectangle 7" width="25.521" height="3.385" rx="1.693" transform="translate(2.395 0) rotate(45)" fill="#fff"/>

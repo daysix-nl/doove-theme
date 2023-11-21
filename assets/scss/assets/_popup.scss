@@ -100,3 +100,19 @@
         display: none !important;
     }
 }
+
+.pop_up {
+    opacity: 0;
+    animation: pop_up 0.3s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes pop_up {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

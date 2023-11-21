@@ -487,10 +487,13 @@ try {
   const buttonClosePopUp = document.querySelector(".closePopUp");
   const popUp = document.querySelector(".pop_up");
 
-  buttonClosePopUp.addEventListener("click", () => {
+  const closePopupAndSetCookie = () => {
     let date = new Date();
     date.setDate(date.getDate() + 7);
     document.cookie = "popup=yes; expires=" + date.toUTCString() + ";";
     popUp.classList.add("hidden");
-  });
+  };
+
+  buttonClosePopUp.addEventListener("click", closePopupAndSetCookie);
+  popUp.addEventListener("click", closePopupAndSetCookie);
 } catch (error) {}
