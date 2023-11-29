@@ -1138,4 +1138,9 @@ function rewrite_image_urls_js() {
     }
 }
 
+
+// Disable XML-RPC
+add_filter('xmlrpc_enabled', '__return_false');
+
+
 add_action('wp_head', 'rewrite_image_urls_js');
