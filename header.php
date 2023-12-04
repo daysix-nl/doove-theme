@@ -25,7 +25,7 @@
     <!-- End Google Tag Manager -->
 </head>
 <body <?php body_class( 'page-block doove' ); ?>>
-  <?php if((!isset($_COOKIE["popup"]) || $_COOKIE["popup"] !== "yes") && get_field('actief', 'option')) { ?>
+  <!-- <?php if((!isset($_COOKIE["popup"]) || $_COOKIE["popup"] !== "yes") && get_field('actief', 'option')) { ?>
       <div class="pop_up fixed top-0 left-0 w-screen h-screen flex bg-[#000000]/20 z-[1000] justify-center items-center ">
           <div class="w-full max-w-[358px] md:max-w-[415px] bg-white m-auto rounded-[11px] overflow-hidden relative pop_up_inner">
               <button class="closePopUp top-2 right-2 absolute z-[100]">
@@ -60,7 +60,7 @@
               </div>
           </div>
       </div>
-  <?php } ?>
+  <?php } ?> -->
 <header class="bg-white h-[82px] md:h-[71px] lg:h-[68px] w-full fixed top-0 z-[999] border-b-[1px] border-[#EBEBEB]">
   <div class="flex items-center justify-between h-full mr-2 md:mr-[25px] lg:mr-[15px] xl:mr-2">
     <a href="/" class="ml-2 md:ml-4 w-[231px]"><?php include get_template_directory() . '/img/icons/logo.php'; ?></a>
