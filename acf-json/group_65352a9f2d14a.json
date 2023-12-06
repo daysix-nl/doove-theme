@@ -28,6 +28,32 @@
             "save_other_choice": 0
         },
         {
+            "key": "field_657050748311e",
+            "label": "Kleur close button",
+            "name": "kleur_close_button",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "button_wit": "Wit",
+                "button_zwart": "Zwart"
+            },
+            "default_value": "button_wit",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_65352b047d256",
             "label": "Afbeelding",
             "name": "popup_afbeelding",
@@ -89,6 +115,33 @@
             "append": ""
         },
         {
+            "key": "field_6570521f3ae66",
+            "label": "Titel kleur",
+            "name": "titel_kleur",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "oranje": "Oranje",
+                "groen": "Groen",
+                "black": "Zwart"
+            },
+            "default_value": "black",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_65352ac4bf162",
             "label": "Tekst",
             "name": "popup_tekst",
@@ -139,6 +192,33 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_657052ea10ee1",
+            "label": "Button achtergrond",
+            "name": "button_achtergrond",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "oranje": "Oranje",
+                "groen": "Groen",
+                "black": "Zwart"
+            },
+            "default_value": "oranje",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -159,5 +239,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1697984369
+    "modified": 1701860109
 }

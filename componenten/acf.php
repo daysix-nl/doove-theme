@@ -33,3 +33,6 @@
 </div>
 </div>
 
+<div class="top-[50%] bottom-[0%]"></div>
+<div class="top-[0%] bottom-[0%]"></div>
+<div class="top-[0%] bottom-[50%]"></div>

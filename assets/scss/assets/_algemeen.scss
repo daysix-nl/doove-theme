@@ -30,6 +30,13 @@ body {
   /* 20 woorden voor afbreken */
 }
 
+.jaar-item {
+  h3 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+}
+
 .text-editor {
   display: grid;
   gap: 2rem;

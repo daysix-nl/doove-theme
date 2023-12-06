@@ -130,6 +130,11 @@
                 "param": "block",
                 "operator": "!=",
                 "value": "acf\/acf-contact"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/acf-jaar-item"
             }
         ]
     ],
@@ -142,5 +147,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698944390
+    "modified": 1701854007
 }
