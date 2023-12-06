@@ -63,7 +63,7 @@
                   $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
                 ?>
                 <?php if (get_field('popup_link', 'option')): ?>   
-                  <a href="<?php echo $link_url; ?>" class="bg-<?php the_field('button_achtergrond', 'option');?> flex justify-center items-center w-full h-[49px] text-white text-18 leading-18 md:text-15 md:leading-15 lg:text-15 lg:leading-15 xl:text-18 xl:leading-18 font-nunito font-bold hover:opacity-[0.8]" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
+                  <a href="<?php echo $link_url; ?>" class="bg-<?php the_field('button_achtergrond', 'option');?> flex justify-center items-center w-full h-[49px] text-white text-18 leading-18 md:text-15 md:leading-15 lg:text-15 lg:leading-15 xl:text-18 xl:leading-18 font-nunito font-bold hover:opacity-[0.8] duration-300" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
                 <?php endif; ?>
               </div>
           </div>
