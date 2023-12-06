@@ -14,7 +14,7 @@ $image1_alt = isset($image1['alt']) ? esc_attr($image1['alt']) : '';
 ?>
     <!-- JAAR ITEM -->
     <?php if (get_field('uitlijning') !== "content-rechts"): ?>   
-    <section class="h-[calc(100dvh-102px)] md:h-[calc(100dvh-91px)] lg:h-[calc(100dvh-88px)] xl:h-[calc(100dvh-88px)] min-h-[678px] md:min-h-[533px] lg:min-h-[560px] xl:min-h-[631px] max-h-[738px] md:max-h-[933px] lg:max-h-[632px] xl:max-h-[722px] overflow-hidden relative bg-white jaar-item">
+    <section class="h-[738px] md:h-[calc(100dvh-91px)] lg:h-[calc(100dvh-88px)] xl:h-[calc(100dvh-88px)] min-h-[738px] md:min-h-[533px] lg:min-h-[560px] xl:min-h-[631px] max-h-[738px] md:max-h-[933px] lg:max-h-[632px] xl:max-h-[722px] overflow-hidden relative bg-white jaar-item">
         <div class="z-[2] relative h-full w-full flex flex-col md:flex-row justify-between px-[20px] md:px-[unset] max-w-[390px] md:max-w-[604px] lg:max-w-[911px] xl:max-w-[1068px] mx-auto items-center">
             <div class="grid items-center h-full">
                 <div class="w-full md:w-[381px] lg:w-[412px] xl:w-[490px] grid h-fit">
