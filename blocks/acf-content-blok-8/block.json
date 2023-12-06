@@ -1,0 +1,27 @@
+{
+  "name": "acf-content-blok-8",
+  "title": "Content blok 8",
+  "description": "In het midden uitgelijnde tekst",
+  "category": "bibliotheek",
+  "icon": "editor-alignleft",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-content-blok-8.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/doove-theme/img/preview-images/leeg.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}
