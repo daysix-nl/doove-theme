@@ -3,7 +3,7 @@ if (isset($block['data']['preview_image_help'])): /* rendering in inserter previ
     echo '<img src="' . $block['data']['preview_image_help'] . '" style="width:100%; height:auto;">';
 else: ?>
     <!-- JAAR ITEM -->
-    <section class="h-[738px] md:h-[933px] lg:h-[632px] xl:h-[722px] overflow-hidden relative">
+    <section class="h-[calc(100dvh-102px)] md:h-[calc(100dvh-91px)] lg:h-[calc(100dvh-88px)] xl:h-[calc(100dvh-88px)] min-h-[678px] md:min-h-[533px] lg:min-h-[560px] xl:min-h-[631px] max-h-[738px] md:max-h-[933px] lg:max-h-[632px] xl:max-h-[722px] overflow-hidden relative">
         <div class="z-[2] relative h-full w-full flex flex-col md:flex-row justify-between px-[20px] md:px-[unset] max-w-[390px] md:max-w-[604px] lg:max-w-[911px] xl:max-w-[1068px] mx-auto items-center">
             <div class="grid items-center h-full">
                 <div class="w-full md:w-[381px] lg:w-[412px] xl:w-[490px] grid h-fit">
@@ -31,7 +31,7 @@ else: ?>
         </div>
     </section>
 
-     <section class="h-[738px] md:h-[933px] lg:h-[632px] xl:h-[722px] overflow-hidden relative">
+     <section class="h-[calc(100dvh-102px)] md:h-[calc(100dvh-91px)] lg:h-[calc(100dvh-88px)] xl:h-[calc(100dvh-88px)] min-h-[678px] md:min-h-[533px] lg:min-h-[560px] xl:min-h-[631px] max-h-[738px] md:max-h-[933px] lg:max-h-[632px] xl:max-h-[722px] overflow-hidden relative">
         <div class="z-[2] relative h-full w-full flex flex-col md:flex-row justify-between px-[20px] md:px-[unset] max-w-[390px] md:max-w-[604px] lg:max-w-[911px] xl:max-w-[1068px] mx-auto items-center">
             <div class="order-1 lg:order-3 grid items-center h-full">
                 <div class="w-full md:w-[381px] lg:w-[412px] xl:w-[490px] grid h-fit">

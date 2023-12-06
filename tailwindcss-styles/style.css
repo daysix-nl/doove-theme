@@ -952,6 +952,9 @@ video {
 .h-screen {
   height: 100vh;
 }
+.h-\[calc\(100dvh-102px\)\] {
+  height: calc(100dvh - 102px);
+}
 .max-h-\[133px\] {
   max-height: 133px;
 }
@@ -973,6 +976,9 @@ video {
 .max-h-\[unset\] {
   max-height: unset;
 }
+.max-h-\[738px\] {
+  max-height: 738px;
+}
 .min-h-\[200px\] {
   min-height: 200px;
 }
@@ -993,6 +999,9 @@ video {
 }
 .min-h-full {
   min-height: 100%;
+}
+.min-h-\[678px\] {
+  min-height: 678px;
 }
 .w-1 {
   width: 10px;
@@ -2282,6 +2291,10 @@ video {
     height: 100vh;
   }
 
+  .md\:h-\[calc\(100dvh-91px\)\] {
+    height: calc(100dvh - 91px);
+  }
+
   .md\:max-h-\[142px\] {
     max-height: 142px;
   }
@@ -2310,6 +2323,10 @@ video {
     max-height: 768px;
   }
 
+  .md\:max-h-\[933px\] {
+    max-height: 933px;
+  }
+
   .md\:min-h-\[209px\] {
     min-height: 209px;
   }
@@ -2328,6 +2345,14 @@ video {
 
   .md\:min-h-\[65px\] {
     min-height: 65px;
+  }
+
+  .md\:min-h-\[\] {
+    min-height: ;
+  }
+
+  .md\:min-h-\[533px\] {
+    min-height: 533px;
   }
 
   .md\:w-7 {
@@ -3236,6 +3261,10 @@ video {
     height: fit-content;
   }
 
+  .lg\:h-\[calc\(100dvh-88px\)\] {
+    height: calc(100dvh - 88px);
+  }
+
   .lg\:max-h-\[131px\] {
     max-height: 131px;
   }
@@ -3260,6 +3289,10 @@ video {
     max-height: unset;
   }
 
+  .lg\:max-h-\[632px\] {
+    max-height: 632px;
+  }
+
   .lg\:min-h-\[208px\] {
     min-height: 208px;
   }
@@ -3282,6 +3315,10 @@ video {
 
   .lg\:min-h-\[72px\] {
     min-height: 72px;
+  }
+
+  .lg\:min-h-\[560px\] {
+    min-height: 560px;
   }
 
   .lg\:w-8 {
@@ -4187,6 +4224,10 @@ video {
     height: 99px;
   }
 
+  .xl\:h-\[calc\(100dvh-88px\)\] {
+    height: calc(100dvh - 88px);
+  }
+
   .xl\:max-h-\[148px\] {
     max-height: 148px;
   }
@@ -4201,6 +4242,10 @@ video {
 
   .xl\:max-h-\[60px\] {
     max-height: 60px;
+  }
+
+  .xl\:max-h-\[722px\] {
+    max-height: 722px;
   }
 
   .xl\:min-h-\[234px\] {
@@ -4225,6 +4270,10 @@ video {
 
   .xl\:min-h-\[82px\] {
     min-height: 82px;
+  }
+
+  .xl\:min-h-\[631px\] {
+    min-height: 631px;
   }
 
   .xl\:w-\[108px\] {
