@@ -1,4 +1,5 @@
 <?php 
+$version_number = '1.3';
 /**
  * The template for displaying the header
  * 
