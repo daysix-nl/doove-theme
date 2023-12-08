@@ -13,6 +13,6 @@ Text Domain: day-six
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import url("./assets/css/swiper.css");
-@import url("./tailwindcss-styles/style.css");
-@import url("./assets/css/main.css");
+@import url("./assets/css/swiper.css?ver=1.4");
+@import url("./tailwindcss-styles/style.css?ver=1.4");
+@import url("./assets/css/main.css?ver=1.4");
