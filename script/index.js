@@ -490,7 +490,8 @@ try {
   const closePopupAndSetCookie = () => {
     let date = new Date();
     date.setDate(date.getDate() + 7);
-    document.cookie = "popup=yes; expires=" + date.toUTCString() + ";";
+    document.cookie =
+      "popup=yes; expires=" + date.toUTCString() + ";" + "path=/";
     popUp.classList.add("hidden");
   };
 
