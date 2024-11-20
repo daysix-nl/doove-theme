@@ -4,21 +4,22 @@
     "type": "module",
     "scripts": {
         "dev": "sass --watch --update --style=expanded assets/scss:assets/css --style compressed & postcss ./tailwindcss-styles/tailwind.css -o ./tailwindcss-styles/style.css --minify --watch",
-        "build": "sass --watch --update --style=expanded assets/scss:assets/css --style compressed & postcss ./tailwindcss-styles/tailwind.css -o ./tailwindcss-styles/style.css --minify --watch"
+        "build": "sass --watch --update --style=expanded assets/scss:assets/css --style compressed & postcss ./tailwindcss-styles/tailwind.css -o ./tailwindcss-styles/style.css --minify --watch",
+        "version": "node update-version.js"
     },
     "description": "",
     "author": "Kevin",
     "license": "ISC",
     "devDependencies": {
-        "autoprefixer": "^10.4.13",
-        "postcss": "^8.4.21",
+        "autoprefixer": "^10.4.15",
+        "postcss": "^8.4.29",
         "postcss-cli": "^10.1.0",
-        "prettier": "^2.8.3",
-        "prettier-plugin-tailwindcss": "^0.2.1",
-        "tailwindcss": "^3.2.4"
+        "prettier": "^2.8.8",
+        "prettier-plugin-tailwindcss": "^0.2.8",
+        "tailwindcss": "^3.3.3"
     },
     "dependencies": {
-        "motion": "^10.15.5",
-        "sass": "^1.54.0"
+        "motion": "^10.16.2",
+        "sass": "^1.66.1"
     }
 }
