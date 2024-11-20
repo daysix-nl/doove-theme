@@ -93,3 +93,38 @@
   color: #FFF;
 
 }
+
+
+.myafbeelingslider {
+  .swiper-button-next {
+    top: unset !important;
+    left: unset !important;
+    right: 10% !important;
+    bottom: 0px !important;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 30px;
+    height: 30px;
+
+    &::after {
+      font-size: 18px;
+      color: #000;
+    }
+  }
+
+  .swiper-button-prev {
+    top: unset !important;
+    left: unset !important;
+    right: calc(10% + 30px) !important;
+    bottom: 0px !important;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 30px;
+    height: 30px;
+
+    &::after {
+      font-size: 18px;
+      color: #000;
+    }
+  }
+}

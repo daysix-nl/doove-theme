@@ -858,6 +858,9 @@ video {
 .hidden {
   display: none;
 }
+.aspect-\[16\/11\] {
+  aspect-ratio: 16/11;
+}
 .aspect-\[4\/3\] {
   aspect-ratio: 4/3;
 }
@@ -2792,6 +2795,10 @@ video {
     padding-bottom: 63px;
   }
 
+  .md\:pb-\[65px\] {
+    padding-bottom: 65px;
+  }
+
   .md\:pb-\[72px\] {
     padding-bottom: 72px;
   }
@@ -3821,6 +3828,10 @@ video {
 
   .lg\:pb-\[65px\] {
     padding-bottom: 65px;
+  }
+
+  .lg\:pb-\[66px\] {
+    padding-bottom: 66px;
   }
 
   .lg\:pb-\[81px\] {

@@ -10,7 +10,7 @@ try {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
   });
-} catch (error) {}
+} catch (error) { }
 try {
   // Select various groups of elements
   const buttons = document.querySelectorAll(".button-navbar");
@@ -62,7 +62,7 @@ try {
 
   // Apply 'mouseover' event to overlayHeader
   overlayHeader.addEventListener("mouseover", removeClassButtonNavbar);
-} catch (error) {}
+} catch (error) { }
 
 /**********************/
 /**** hamburger ***/
@@ -105,7 +105,7 @@ try {
       submenuOverlay.classList.toggle("open");
     });
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   const inner = document.querySelector(".inner-hero");
@@ -132,7 +132,7 @@ try {
       inner.style.transform = `scale(${scale})`;
     }
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   var swiper = new Swiper(".mySwiper", {
@@ -163,7 +163,7 @@ try {
       },
     },
   });
-} catch (error) {}
+} catch (error) { }
 
 // var slides = document.querySelectorAll(".swiper-slide");
 // var isMouseDown = false;
@@ -222,7 +222,7 @@ try {
       prevEl: ".swiper-button-prev",
     },
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   function inittab(tabWrapper, activeTab = 1) {
@@ -264,7 +264,7 @@ try {
 
   const tabWrappers = document.querySelectorAll(".tab-wrapper");
   tabWrappers.forEach((tabWrapper, index) => inittab(tabWrapper));
-} catch (error) {}
+} catch (error) { }
 
 try {
   /**********************/
@@ -289,7 +289,7 @@ try {
       }
     });
   }
-} catch (error) {}
+} catch (error) { }
 
 try {
   document.addEventListener("DOMContentLoaded", function () {
@@ -316,7 +316,7 @@ try {
       });
     }
   });
-} catch (error) {}
+} catch (error) { }
 
 /*********************/
 /*** contact overlay ***/
@@ -340,7 +340,7 @@ try {
       ContactBackground.classList.remove("open");
     });
   }
-} catch (error) {}
+} catch (error) { }
 
 /*********************/
 /*** offerte overlay ***/
@@ -366,7 +366,7 @@ try {
       offerteBackground.classList.remove("open");
     });
   }
-} catch (error) {}
+} catch (error) { }
 
 try {
   document.addEventListener("DOMContentLoaded", (event) => {
@@ -497,4 +497,24 @@ try {
 
   buttonClosePopUp.addEventListener("click", closePopupAndSetCookie);
   popUp.addEventListener("click", closePopupAndSetCookie);
-} catch (error) {}
+} catch (error) { }
+
+try {
+  var swiper = new Swiper(".myafbeelingslider", {
+    slidesPerView: 1.5,
+    centeredSlides: true,
+    spaceBetween: 10,
+    initialSlide: 1,
+    loop: true,
+    breakpoints: {
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+} catch (error) { }
